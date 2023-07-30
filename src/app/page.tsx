@@ -2,7 +2,7 @@
 
 import '../../styles/index.css'
 import ServiceCard from '../../components/service-card';
-import { BiRightArrow, BiPhone, BiMailSend, BiPin } from 'react-icons/bi';
+import { HiOutlineChevronRight, HiPhone, HiEnvelope, HiMapPin } from 'react-icons/hi2'
 import { useState } from 'react';
 import Specialist from '../../components/specialist';
 import Question from '../../components/question';
@@ -14,10 +14,10 @@ function Home() {
         <>
             <section className={`landing__page py-80 flex justify-center z-10`}>
                 <div className={`flex flex-col text-center cursor-default`}>
-                    <h1 className={`text-8xl font-bold text-green-500 drop-shadow-md`}>CLiPO</h1>
+                    <h1 className={`text-8xl font-bold text-green-500 drop-shadow-sm`}>CLiPO</h1>
                     <div className={`flex justify-between text-white`}>
-                        <a className={`bg-slate-900 py-2 px-4 font-bold text-2xl rounded-2xl hover:opacity-95 transition-all duration-150`} href="#">O Nas</a>
-                        <a className={`py-2 drop-shadow-md font-bold text-2xl underline decoration-solid hover:opacity-95 transition-all duration-150`} href="#">Kontakt</a>
+                        <a className={`bg-slate-900 py-2 px-10 font-bold text-2xl rounded-full hover:opacity-95 transition-all duration-150`} href="#">O Nas</a>
+                        <a className={`py-2 drop-shadow-sm font-bold text-2xl underline decoration-solid hover:opacity-95 transition-all duration-150`} href="#">Kontakt</a>
                     </div>
                 </div>
             </section>
@@ -29,22 +29,25 @@ function Home() {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, molestiae quasi, quam iure consectetur labore repellendus placeat atque at ex voluptatibus animi reiciendis voluptatem reprehenderit veniam? Fugiat accusantium quas impedit.
                 </p>
             </section>
-            <section id='uslugi' className={`services`}>
-                <div className={`services__grid grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-1 xl:grid-cols-5 place-items-center`}>
-                    <ServiceCard />
-                    <ServiceCard />
-                    <ServiceCard />
-                    <ServiceCard />
-                    <ServiceCard />
-                    <ServiceCard />
-                    <ServiceCard />
+            <section id='uslugi' className={`services relative`}>
+                <div className={`relative`}>
+                    <div className={`radial z-0`} />
+                    <div className={`services__grid grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-1 xl:grid-cols-5 place-items-center z-10`}>
+                        <ServiceCard />
+                        <ServiceCard />
+                        <ServiceCard />
+                        <ServiceCard />
+                        <ServiceCard />
+                        <ServiceCard />
+                        <ServiceCard />
+                    </div>
+                    <button onClick={() => setRevealed(prev => !prev)} className={`text-white font-bold flex gap-2 justify-center items-center w-full text-2xl z-10 relative hover:text-green-500 transition-all duration-150 py-2`} > 
+                        <span className={`${isRevealed && 'rotate-90'} transition-all duration-150 text-green-500`}>
+                            <HiOutlineChevronRight />
+                        </span>
+                        Zobacz pelny cennik
+                    </button>
                 </div>
-                <button onClick={() => setRevealed(prev => !prev)} className={`text-white font-bold flex gap-2 justify-center items-center w-full text-2xl hover:text-green-500 transition-all duration-150 py-2`} > 
-                    <span className={`${isRevealed && 'rotate-90'} transition-all duration-150 text-green-500`}>
-                        <BiRightArrow />
-                    </span>
-                    Zobacz pelny cennik
-                </button>
                 <div className={`grid grid-cols-1 transition-all duration-150 origin-top scale-y-0 h-0 ${isRevealed && 'revealed'}`}>
                     <div className={`table__cell `}>
                         <span className={`cell__title`}>Lorem ipsum dolor</span>
@@ -75,7 +78,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section id='nasi-specjaliscie' className={`our__specialists p-3 border-t-2`}>
+            <section id='nasi-specjaliscie' className={`our__specialists p-3 border-t-2 relative`}>
                 <h1 className={`h1`}>Nasi specjalisci</h1>
                 <div className={`grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-1 xl:grid-cols-6 place-items-center`}>
                     <Specialist />
@@ -100,9 +103,10 @@ function Home() {
                 <Question />
                 <Question />
             </section>
-            <section id='kontakt' className={`contact grid grid-cols-1 lg:grid-cols-2 w-full place-items-center py-2 px-20 border-t-2 border-opacity-0`}>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.700528883247!2d19.389570951461806!3d51.84816476195709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb5ceaf7ee581%3A0x261e0f2373fb7736!2sCentrum%20Leczenia%20i%20Profilaktyki%20Oty%C5%82o%C5%9Bci%20%7C%20CLiPO!5e0!3m2!1spl!2ssk!4v1690658611597!5m2!1spl!2ssk" className={`w-full aspect-square rounded-xl lg:translate-x-10`} style={{border: "0px"}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                <div className={`contact__container bg-slate-700 w-full p-2 rounded-xl -translate-y-10 grid grid-rows-4 lg:-translate-y-0 lg:-translate-x-10 lg:shadow-sm`}>
+            <section id='kontakt' className={`contact relative grid grid-cols-1 lg:grid-cols-2 w-full place-items-center py-2 px-20 border-opacity-0`}>
+                <div className={`radial`} />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.700528883247!2d19.389570951461806!3d51.84816476195709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb5ceaf7ee581%3A0x261e0f2373fb7736!2sCentrum%20Leczenia%20i%20Profilaktyki%20Oty%C5%82o%C5%9Bci%20%7C%20CLiPO!5e0!3m2!1spl!2ssk!4v1690658611597!5m2!1spl!2ssk" className={`w-full aspect-square rounded-xl lg:translate-x-10 z-40`} style={{border: "0px"}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <div className={`contact__container bg-slate-700 w-full p-2 rounded-xl -translate-y-10 grid grid-rows-4 lg:-translate-y-0 lg:-translate-x-10 lg:shadow-sm z-40`}>
                     <h1 className={`text-green-500 text-4xl font-bold text-center self-center`}>Kontakt</h1>
                     <div className={`contact__el flex flex-col `}>
                         <div className={`contact__title text-white underline text-2xl font-bold`}>
@@ -110,13 +114,13 @@ function Home() {
                         </div>
                         <a href='tel:+48502239088' className={`contact__link`}>
                             <span className={`contact__icon`}>
-                                <BiPhone />
+                                <HiPhone />
                             </span>
                             +48 502 239 088
                         </a>
                         <a href='mailto:biuro@clipo.pl' className={`contact__link`}>
                             <span className={`contact__icon`}>
-                                <BiMailSend />
+                                <HiEnvelope />
                             </span>
                             biuro@clipo.pl
                         </a>
@@ -127,20 +131,20 @@ function Home() {
                         </div>
                         <a href='tel:+48502238797' className={`contact__link`}>
                             <span className={`contact__icon`}>
-                                <BiPhone />
+                                <HiPhone />
                             </span>
                             +48 502 238 797
                         </a>
                         <a href='mailto:recepcja@clipo.pl' className={`contact__link`}>
                             <span className={`contact__icon`}>
-                                <BiMailSend />
+                                <HiEnvelope />
                             </span>
                             recepcja@clipo.pl
                         </a>
                     </div>
                     <div className={`contact__adress text-white text-xl self-end py-3 px-2 flex items-center gap-1 font-bold`}>
                         <span className={`text-2xl font-bold text-red-700`}>
-                            <BiPin />
+                            <HiMapPin />
                         </span>
                         Al. Struga 39, 95-100 Zgierz
                     </div>

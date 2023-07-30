@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import { BiRightArrow } from 'react-icons/bi'
+import { HiOutlineChevronRight } from 'react-icons/hi2'
 
 const Question = () => {
     const [isRevealed, setRevealed] = useState(false);
@@ -10,7 +10,7 @@ const Question = () => {
         <div className={`mx-4 my-2 p-2 bg-slate-700 rounded-xl text-white md:mx-40 lg:mx-56`}>
             <button className={`flex w-full gap-1 items-center text-white font-bold text-xl px-2 py-1 bg-green-500 rounded-xl`} onClick={() => setRevealed(prev => !prev)}>
                 <span className={`transition-all duration-150 ${isRevealed && 'rotate-90'}`}>
-                    <BiRightArrow />
+                    <HiOutlineChevronRight />
                 </span>
                 Lorem ipsum dolor sit?
             </button>
