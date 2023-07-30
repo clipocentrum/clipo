@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { scroll-behavior: smooth; }
+
+@layer components{
+    .header_link {
+        @apply text-center py-3 px-3 mx-1 text-white text-2xl md:text-4xl hover:text-green-500 hover:border-green-500 transition-all duration-150 flex justify-center items-center border rounded-full
+    }
+    
+    .nav_el {
+        @apply p-4 my-1 hover:bg-slate-800 rounded-lg transition-all duration-150
+    }
+    
+    .table__cell {
+        @apply grid bg-black even:bg-slate-900 text-white grid-cols-2 place-items-center p-4
+    }
+
+    .h1 {
+        @apply text-white text-3xl text-center font-bold p-3
+    }
+
+    .revealed {
+        @apply scale-y-100 h-full !important
+    }
+
+    .contact__link {
+        @apply text-white opacity-80 italic ml-2 mb-3 flex gap-1 items-center transition-all duration-150 hover:opacity-80 hover:underline
+    }
+
+    .contact__icon {
+        @apply text-green-500 text-2xl font-bold
+    }
+
+    .company__data {
+        @apply text-gray-300 py-1 italic drop-shadow-lg flex gap-2 lg:text-xl
+    }
+
+    .company__data__heading {
+        @apply font-bold text-white not-italic
+    }
+
+    .footer__link {
+        @apply text-white transition-all py-1 drop-shadow hover:drop-shadow-lg
+    }
+}
+
+.landing__page{
+    background-image: url('../utils/bg-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service__image{
+    background-image: url('../utils/bg-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.specialist__photo{
+    background-image: url('../utils/bg-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.specialist{
+    opacity: 0.8;
+    background-color: #22c55e;
+    /* background-image: 
+        linear-gradient(135deg, rgb(34 197 94) 25%, transparent 25%), linear-gradient(225deg, rgb(34 197 94) 25%, transparent 25%), linear-gradient(45deg, rgb(34 197 94) 25%, transparent 25%), linear-gradient(315deg, rgb(34 197 94) 25%, transparent 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-repeat: repeat; */
+    background-image: radial-gradient(rgb(30 41 59) 6px, transparent 6px);
+    background-size: 10px 10px;
+    background-position: center;
+}
