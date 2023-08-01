@@ -11,12 +11,6 @@ const Footer = () => {
             <a href="#" className={`header_link text-2xl hover:opacity-90 hover:text-white`}>
                 <BsFacebook />
             </a>
-            <a href="#" className={`header_link text-2xl hover:opacity-90 hover:text-white`}>
-                <BsInstagram />
-            </a>
-            <a href="#" className={`header_link text-2xl hover:opacity-90 hover:text-white`}>
-                <BsTwitter />
-            </a>
         </div>
         <div className={`py-2`}>
             <span className={`company__data`}>
