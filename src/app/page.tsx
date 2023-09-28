@@ -191,23 +191,23 @@ function Home() {
             <section id='nasi-specjalisci' className={`our__specialists p-1 md:p-3 border-t-2 relative`}>
                 <h1 className={`h1`}>Nasi specjalisci</h1>
                 <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 xl:grid-cols-6 place-items-center`}>
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
+                    <Specialist name={'Joanna Kowalska'} specialisation={'Diabetolog'} key={'Joanna Kowalska'} slug={'joanna-kowalska'} />
                 </div>
             </section>
             <section id='faq' className={`faq border-b-1`}>
