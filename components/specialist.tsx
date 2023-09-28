@@ -1,7 +1,14 @@
 import React from 'react'
 import '../styles/index.css'
 
-const Specialist = () => {
+type Props = {
+  name: string,
+  specialisation: string,
+  key: string,
+  slug: string
+}
+
+const Specialist = ({name, specialisation, key, slug}: Props) => {
   return (
     <div className={`specialist rounded-xl w-44 md:w-48 flex flex-col justify-center items-center `}>
         <div className={`specialist__photo w-40 h-40 rounded-full translate-y-10`} />
