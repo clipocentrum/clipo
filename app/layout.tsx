@@ -1,16 +1,18 @@
 "use client"
 
-import Footer from '../../components/footer'
-import Header from '../../components/header'
-import '../../styles/index.css'
+import { HiOutlineArrowSmallUp } from 'react-icons/hi2'
+import Footer from '../components/footer'
+import Header from '../components/header'
+import '../styles/index.css'
 import { useEffect, useRef, useState } from 'react'
-import { HiOutlineArrowSmallUp } from "react-icons/hi2"
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: {children: React.ReactNode}) {
   const ref = useRef(null);
   const [isVisible, setVisible] = useState(true);
+  const [firstRender, setFirstRender] = useState(true);
 
   useEffect(() => {
+    setFirstRender(false);
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0]
       setVisible(entry.isIntersecting);
@@ -21,7 +23,7 @@ export default function RootLayout({ children }) {
   const scrollTop = () => {
     window.scrollTo(0, 0)
   }
-  
+
   return (
       <html lang="pl">
         <body className='bg-slate-900'>

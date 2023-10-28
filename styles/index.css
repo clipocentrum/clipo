@@ -55,28 +55,27 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
 }
 
 .landing__page {
-    background-image: url('../utils/bg-image.jpg');
+    background-image: url('/bg-image-clipo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .logo {
-    background-image: url('../utils/clipo-logo.png');
+    background-image: url('/clipo-logo.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .service__image {
-    background-image: url('../utils/bg-image.jpg');
+    background-image: url('/photos/replacement-clipo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .specialist__photo {
-    background-image: url('../utils/bg-image.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

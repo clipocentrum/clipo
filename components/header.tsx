@@ -11,10 +11,10 @@ const Header = (props: {isVisible: boolean}) => {
   return (
     <header className={`fixed top-0 left-0 header flex flex-auto justify-between w-screen  z-50 ${!props.isVisible && 'bg-green-600 drop-shadow-sm'} transition-all duration-150`}>
         <div className={`header_links flex py-1 px-2`}>
-          <a className={`header_link hover:text-transparent cursor-pointer ${!props.isVisible && 'text-2xl hover:opacity-90 hover:text-transparent border-green-500 hover:border-green-500 '} logo text-transparent`} onClick={() => window.scrollTo(0, 0)}>
+          <a className={`header_link hover:text-transparent cursor-pointer ${!props.isVisible && 'text-2xl hover:opacity-90 hover:text-transparent border-green-500 hover:border-green-500 '} logo text-transparent`} onClick={() => window.scrollTo(0, 0)} href='/#' >
             <BsInstagram />
           </a>
-          <a href="#" className={`header_link ${!props.isVisible && 'text-5xl hover:opacity-90 p-0 hover:text-white border-transparent hover:border-transparent'}`}>
+          <a target='_blank' href="https://www.facebook.com/CLiPOpl" className={`header_link ${!props.isVisible && 'text-5xl hover:opacity-90 p-0 hover:text-white border-transparent hover:border-transparent'}`}>
             <BsFacebook />
           </a>
         </div>
@@ -27,8 +27,7 @@ const Header = (props: {isVisible: boolean}) => {
             <li className={`nav_el`}>
               <a onClick={() => {
                   setOpened(false)
-                  window.scrollTo(0, 0)
-                }} className={`nav_link cursor-pointer`} >
+                }} href="/#" className={`nav_link cursor-pointer`} >
                 <span className={`nav_icon`}>
                   <HiOutlineHome />
                 </span>
@@ -36,7 +35,7 @@ const Header = (props: {isVisible: boolean}) => {
               </a>
             </li>
             <li className={`nav_el`}>
-              <a onClick={() => setOpened(false)} href="#o-nas" className={`nav_link`}>
+              <a onClick={() => setOpened(false)} href="/#o-nas" className={`nav_link`}>
                 <span className={`nav_icon`}>
                   <HiOutlineIdentification />
                 </span>
@@ -44,7 +43,7 @@ const Header = (props: {isVisible: boolean}) => {
               </a>
             </li>
             <li className={`nav_el`}>
-              <a onClick={() => setOpened(false)} href="#uslugi" className={`nav_link`}>
+              <a onClick={() => setOpened(false)} href="/#uslugi" className={`nav_link`}>
                 <span className={`nav_icon`}>
                   <HiOutlineSwatch />
                 </span>
@@ -52,7 +51,7 @@ const Header = (props: {isVisible: boolean}) => {
               </a>
             </li>
             <li className={`nav_el`}>
-              <a onClick={() => setOpened(false)} href="#nasi-specjalisci" className={`nav_link`}>
+              <a onClick={() => setOpened(false)} href="/#nasi-specjalisci" className={`nav_link`}>
                 <span className={`nav_icon`}>
                   <HiOutlineUserGroup />
                 </span>
@@ -60,7 +59,7 @@ const Header = (props: {isVisible: boolean}) => {
               </a>
             </li>
             <li className={`nav_el`}>
-              <a onClick={() => setOpened(false)} href="#faq" className={`nav_link`}>
+              <a onClick={() => setOpened(false)} href="/#faq" className={`nav_link`}>
                 <span className={`nav_icon`}>
                   <HiOutlineQuestionMarkCircle />
                 </span>
@@ -68,7 +67,7 @@ const Header = (props: {isVisible: boolean}) => {
               </a>
             </li>
             <li className={`nav_el`}>
-              <a onClick={() => setOpened(false)} href="#kontakt" className={`nav_link`}>
+              <a onClick={() => setOpened(false)} href="/#kontakt" className={`nav_link`}>
                 <span className={`nav_icon`}>
                   <HiOutlinePaperAirplane />
                 </span>

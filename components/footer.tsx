@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
 
@@ -8,7 +10,7 @@ const Footer = () => {
             CLiPO | Centrum Leczenia i Profilaktyki Otylosci
         </h2>
         <div className={`header_links flex w-full lg:justify-end`}>
-            <a href="#" className={`header_link text-2xl hover:opacity-90 hover:text-white`}>
+            <a target='_blank' href="https://www.facebook.com/CLiPOpl" className={`header_link text-2xl hover:opacity-90 hover:text-white`}>
                 <BsFacebook />
             </a>
         </div>
@@ -51,7 +53,7 @@ const Footer = () => {
                 Subwencja z PFR
             </a>
         </div>
-    </footer>
+    </footer >
   )
 }
 

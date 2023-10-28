@@ -1,11 +1,12 @@
 "use client";
 
-import '../../styles/index.css'
-import ServiceCard from '../../components/service-card';
-import { HiOutlineChevronRight, HiPhone, HiEnvelope, HiMapPin } from 'react-icons/hi2'
+import '../styles/index.css'
+import ServiceCard from '../components/service-card';
+import { HiOutlineChevronRight, HiPhone, HiEnvelope, HiMapPin, HiOutlineArrowSmallUp } from 'react-icons/hi2'
 import { useState } from 'react';
-import Specialist from '../../components/specialist';
-import Question from '../../components/question';
+import Specialist from '../components/specialist';
+import Question from '../components/question';
+import { specialists } from '../public/specialists';
 
 function Home() {
     const [isRevealed, setRevealed] = useState(false);
@@ -163,7 +164,7 @@ function Home() {
                     <div className={`services__grid grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-1 xl:grid-cols-5 place-items-center z-10`}>
                         {
                             services.map(({service, price}) => (
-                                <ServiceCard service={service} price={price} />
+                                <ServiceCard service={service} price={price} key={service} />
                             ))
                         }
                     </div>
@@ -191,23 +192,11 @@ function Home() {
             <section id='nasi-specjalisci' className={`our__specialists p-1 md:p-3 border-t-2 relative`}>
                 <h1 className={`h1`}>Nasi specjalisci</h1>
                 <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 xl:grid-cols-6 place-items-center`}>
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
-                    <Specialist />
+                    {
+                        specialists.map((el) => (
+                            <Specialist specialist={el} />
+                        ))
+                    }
                 </div>
             </section>
             <section id='faq' className={`faq border-b-1`}>
@@ -265,6 +254,9 @@ function Home() {
                     </div>
                 </div>
             </section>
+            {/* <button onClick={scrollTop} className={`${isVisible && 'scale-0'} fixed bg-green-600 w-12 aspect-square lg:w-20 lg:h-20 right-0 bottom-0 text-4xl flex justify-center items-center m-2 text-white rounded-full opacity-60 hover:opacity-95 transition-all duration-150 outline outline-white border border-transparent z-50`}>
+                <HiOutlineArrowSmallUp />
+            </button> */}
         </>
     );
 }
