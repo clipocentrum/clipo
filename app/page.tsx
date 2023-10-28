@@ -71,70 +71,92 @@ function Home() {
     const fullServices = [
         {
             service: 'prof. dr hab. n. med. Renata Stawerska: konsultacja',
+            specialisation: 'Endokrynologia dla dzieci i młodzieży',
             price: '280 zl'
         },
         {
             service: 'dr n. med. Anna Łupińska: konsultacja',
+            specialisation: 'Endokrynologia dla dzieci i młodzieży',
             price: '230 zl'
         },
-        {
-            service: 'lek. med. Krzysztof Stanek: konsultacja',
-            price: '230 zl'
-        },
-        {
-            service: 'lek. med. Krzysztof Stanek: USG tarczycy u dzieci',
-            price: '150 zl'
-        },
-        {
-            service: 'lek. med. Krzysztof Stanek: konsultacja + USG',
-            price: '300 zl'
-        },
+        // {
+        //     service: 'lek. med. Krzysztof Stanek: konsultacja',
+        //     price: '230 zl'
+        // },
+        // {
+        //     service: 'lek. med. Krzysztof Stanek: USG tarczycy u dzieci',
+        //     price: '150 zl'
+        // },
+        // {
+        //     service: 'lek. med. Krzysztof Stanek: konsultacja + USG',
+        //     price: '300 zl'
+        // },
         {
             service: 'dr n. med. Katarzyna Dąbrowska: konsultacja',
+            specialisation: 'Endokrynologia dla dorosłych',
             price: '220 zl'
         },
         {
             service: 'dr n. med. Katarzyna Dąbrowska: konsultacja + USG',
+            specialisation: 'Endokrynologia dla dorosłych',
             price: '300 zl'
         },
         {
             service: 'dr n. med. Małgorzata Szałapska: konsultacja',
+            specialisation: 'Diabetologia, Pediatria',
             price: '250 zl'
         },
         {
             service: 'lek. med. Agnieszka Kucińska: konsultacja',
+            specialisation: 'Interna, Diabetologia',
             price: '200 zl'
         },
         {
             service: 'dr n. med. Jadwiga Kaczmarek: konsultacja',
+            specialisation: 'Alergologia',
             price: '200 zl'
         },
         {
             service: 'dietetyk kliniczny Katarzyna Łokieć: wizyta + dieta',
+            specialisation: 'Dietetyka',
             price: '200 zl'
         },
         {
             service: 'mgr Magdalena Grobelna: wizyta + dieta',
+            specialisation: 'Dietetyka',
             price: '150 zl'
         },
         {
             service: 'lek. med. Krystian Słodkowski: wizyta',
+            specialisation: 'Urologia dla dorosłych',
             price: '180 zl'
         },
+        // {
+        //     service: 'prof. dr hab. n. med. Andrzej Lewiński',
+        //     price: '280 zl'
+        // },
+        // {
+        //     service: 'dr n. med. Konrad Knop: wizyta',
+        //     price: '180 zl'
+        // },
         {
-            service: 'prof. dr hab. n. med. Andrzej Lewiński',
-            price: '280 zl'
-        },
-        {
-            service: 'dr n. med. Konrad Knop: wizyta',
-            price: '180 zl'
-        },
-        {
-            service: 'Agnieszka Kwiatkowska-Milbrandt: wizyta',
+            service: 'mgr. Agnieszka Kwiatkowska-Milbrandt: wizyta',
+            specialisation: 'Terapia',
             price: '150 zl'
         },
         {
+            service: 'Ewa Kołodziejczyk: konsujtacja',
+            specialisation: 'Fizjoterapia Urogienekologiczna',
+            price: '160 zl'
+        },
+        {
+            service: 'mgr. Wojciech Stawerski: konsultacja, trening personalny',
+            specialisation: 'Fizjoterapia',
+            price: '90 zl'
+        },
+        {
             service: 'Recepta',
+            specialisation: 'n/d',
             price: '80 zl'
         },
     ]
@@ -177,9 +199,10 @@ function Home() {
                 </div>
                 <div className={`grid grid-cols-1 transition-all duration-300 origin-top scale-y-0 h-0 ${isRevealed && 'revealed'}`}>
                     {
-                        fullServices.map(({service, price}) => (
+                        fullServices.map(({service, specialisation, price}) => (
                             <div className={`table__cell `} key={service}>
                                 <span className={`cell__title`}>{service}</span>
+                                <span className={`cell__specialisation`}>{specialisation}</span>
                                 <span className={`cell__price`}>{price}</span>
                             </div>
                         ))

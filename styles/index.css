@@ -18,7 +18,19 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
     }
     
     .table__cell {
-        @apply grid bg-black even:bg-slate-900 text-white grid-cols-2 place-items-center p-4
+        @apply grid bg-black even:bg-slate-900 text-white grid-cols-1 md:grid-cols-3 place-items-center p-4
+    }
+
+    .cell__title {
+        @apply w-full font-bold text-center md:text-left
+    }
+
+    .cell__specialisation {
+        @apply italic opacity-80
+    }
+
+    .cell__price {
+        @apply text-green-500
     }
 
     .h1 {

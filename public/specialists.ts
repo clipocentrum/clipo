@@ -26,14 +26,14 @@ export const specialists: Specialist[] = [
     bio: 'Jestem lekarzem z 20-letnim stażem pracy. Zajmuje się diagnozowaniem i leczeniem dzieci z niedoborem wzrostu, zaburzeniami dojrzewania płciowego, chorobami tarczycy, nadnerczy i gonad. W CLiPO współpracuję z diabetologami, dietetykami oraz fizjoterapeutami, aby pomóc zredukować masę ciała u dzieci z otyłością. Posiadam specjalizację z pediatrii, endokrynologii, jak również z endokrynologii dziecięcej. Jestem pracownikiem Instytutu Centrum Zdrowia Matki Polki w Łodzi oraz wykładowcą na Uniwersytecie Medycznym w Łodzi. Posiadam stopień doktora habilitowanego i stanowisko Profesora Instytutu i Uniwersytetu Medycznego w Łodzi. Jestem również konsultantem wojewódzkim w zakresie endokrynologii i diabetologii dziecięcej.',
     photoPath: 'rstawerska.webp'
   },
-  {
-    slug: 'andrzej-lewinski',
-    fullName: 'Andrzej Lewiński',
-    title: 'prof. dr. hab. n. med.',
-    specialisation: 'Endokrynolog dzieci, młodzieży i dorosłych',
-    bio: 'Prof. dr hab. n. med. Andrzej Lewiński posiada specjalizację z endokrynologii, endokrynologii dziecięcej a ponadto specjalizacje z zakresu chorób wewnętrznych, medycyny nuklearnej i zdrowia publicznego. Jest członkiem wielu towarzystw naukowych, m.in. Europejskiego Towarzystwa Endokrynologicznego i Europejskiego Towarzystwa Tarczycowego. Był członkiem Zarządu Głównego Europejskiej Federacji Towarzystw Endokrynologicznych (1994–2001), jak również Prezesem Polskiego Towarzystwa Endokrynologicznego (1993–1999). Był pierwszym Rektorem Uniwersytetu Medycznego w Łodzi (2002–2008) oraz Wiceprzewodniczącym Rady Konsultacyjnej Agencji Oceny Technologii Medycznych (2008–2012). Obecnie jest członkiem Sekcji IV (Medycznej) Centralnej Komisji ds. Stopni i Tytułów. Profesor Lewiński jest jednym z założycieli i pierwszym Prezesem Polskiego Towarzystwa Tyreologicznego (od 2008) oraz Redaktorem Naczelnym pisma Thyroid Research, BMC Ltd., Londyn (od 2008 i nadal). Profesor Lewiński jest autorem bądź współautorem 430 prac oryginalnych z zakresu endokrynologii, publikowanych w recenzowanych czasopismach zagranicznych i polskich w tym 80 z zakresu endokrynologii dziecięcej. Obecnie jest kierownikiem Kliniki Endokrynologii i Chorób Metabolicznych Instytutu Centrum Zdrowia Matki Polki (od 2000) oraz Uniwersytetu Medycznego w Łodzi (od 2005).',
-    photoPath: 'replacement-clipo.png'
-  },
+  // {
+  //   slug: 'andrzej-lewinski',
+  //   fullName: 'Andrzej Lewiński',
+  //   title: 'prof. dr. hab. n. med.',
+  //   specialisation: 'Endokrynolog dzieci, młodzieży i dorosłych',
+  //   bio: 'Prof. dr hab. n. med. Andrzej Lewiński posiada specjalizację z endokrynologii, endokrynologii dziecięcej a ponadto specjalizacje z zakresu chorób wewnętrznych, medycyny nuklearnej i zdrowia publicznego. Jest członkiem wielu towarzystw naukowych, m.in. Europejskiego Towarzystwa Endokrynologicznego i Europejskiego Towarzystwa Tarczycowego. Był członkiem Zarządu Głównego Europejskiej Federacji Towarzystw Endokrynologicznych (1994–2001), jak również Prezesem Polskiego Towarzystwa Endokrynologicznego (1993–1999). Był pierwszym Rektorem Uniwersytetu Medycznego w Łodzi (2002–2008) oraz Wiceprzewodniczącym Rady Konsultacyjnej Agencji Oceny Technologii Medycznych (2008–2012). Obecnie jest członkiem Sekcji IV (Medycznej) Centralnej Komisji ds. Stopni i Tytułów. Profesor Lewiński jest jednym z założycieli i pierwszym Prezesem Polskiego Towarzystwa Tyreologicznego (od 2008) oraz Redaktorem Naczelnym pisma Thyroid Research, BMC Ltd., Londyn (od 2008 i nadal). Profesor Lewiński jest autorem bądź współautorem 430 prac oryginalnych z zakresu endokrynologii, publikowanych w recenzowanych czasopismach zagranicznych i polskich w tym 80 z zakresu endokrynologii dziecięcej. Obecnie jest kierownikiem Kliniki Endokrynologii i Chorób Metabolicznych Instytutu Centrum Zdrowia Matki Polki (od 2000) oraz Uniwersytetu Medycznego w Łodzi (od 2005).',
+  //   photoPath: 'replacement-clipo.png'
+  // },
   {
     slug: 'anna-lupinska',
     fullName: 'Anna Łupińska',
@@ -42,14 +42,14 @@ export const specialists: Specialist[] = [
     bio: 'Jestem absolwentką Wydziału Lekarskiego Uniwersytetu Medycznego w Łodzi. Posiadam specjalizację w dziedzinie pediatrii oraz endokrynologii i diabetologii dziecięcej. Pracuję w Klinice Endokrynologii i Chorób Metabolicznych Instytutu Centrum Zdrowia Matki Polki w Łodzi. Stopień naukowy doktora nauk medycznych uzyskałam na podstawie obrony pracy doktorskiej pod tytułem: „Badania nad uwarunkowaniem masy kostnej dzieci łódzkich w wieku 7-10 lat  z rozpoznaną otyłością”. Rozprawa doktorska została obroniona z wyróżnieniem. W celu poszerzenia swoich kompetencji i zainteresowań dotyczących profilaktyki i leczenia otyłości wieku rozwojowego, w latach 2014-2015 odbyłam również kształcenie podyplomowe na kierunku: „Poradnictwo dietetyczne – postępy w żywieniu człowieka” w Instytucie Żywności i Żywienia w Warszawie. W ramach swojej praktyki zajmuję się diagnostyką i leczeniem dzieci z zaburzeniami wzrastania i dojrzewania płciowego, otyłością, chorobami tarczycy, nadnerczy, przysadki oraz innych gruczołów dokrewnych. Istotne jest dla mnie holistyczne, a przy tym indywidualne podejście do każdego pacjenta.',
     photoPath: 'replacement-clipo.png'
   },
-  {
-    slug: 'krzysztof-stanek',
-    fullName: 'Krzysztof Stanek',
-    title: 'lek.',
-    specialisation: 'Endokrynolog dzieci i młodzieży',
-    bio: 'W 2013 roku ukończył Wydział Lekarski na Uniwersytecie Medycznym w Łodzi. Następnie ukończył szkolenie specjalizacyjne w dziedzinie Endokrynologii i Diabetologii Dziecięcej w Klinice Endokrynologii i Chorób Metabolicznych w Instytucie Centrum Zdrowia Matki Polki w Łodzi. Jest szczególnie zainteresowany diagnozowaniem i leczeniem dzieci z niskorosłością, endokrynologicznie uwarunkowaną otyłością czy chorobą Hashimoto, a także ultrasonograficznym obrazowaniem tarczycy.',
-    photoPath: 'kstanek.webp'
-  },
+  // {
+  //   slug: 'krzysztof-stanek',
+  //   fullName: 'Krzysztof Stanek',
+  //   title: 'lek.',
+  //   specialisation: 'Endokrynolog dzieci i młodzieży',
+  //   bio: 'W 2013 roku ukończył Wydział Lekarski na Uniwersytecie Medycznym w Łodzi. Następnie ukończył szkolenie specjalizacyjne w dziedzinie Endokrynologii i Diabetologii Dziecięcej w Klinice Endokrynologii i Chorób Metabolicznych w Instytucie Centrum Zdrowia Matki Polki w Łodzi. Jest szczególnie zainteresowany diagnozowaniem i leczeniem dzieci z niskorosłością, endokrynologicznie uwarunkowaną otyłością czy chorobą Hashimoto, a także ultrasonograficznym obrazowaniem tarczycy.',
+  //   photoPath: 'kstanek.webp'
+  // },
   {
     slug: 'katarzyna-dabrowska',
     fullName: 'Katarzyna Dąbrowska',
@@ -112,14 +112,14 @@ export const specialists: Specialist[] = [
     bio: 'Terapeutka Terapii Skoncentrowanej na Rozwiązaniach, w trakcie studiów podyplomowych na kierunku Psychoterapia ze szczególnym uwzględnieniem aspektów klinicznych na Uniwersytecie Medycznym w Łodzi. Pracuje z dorosłymi, którzy: doświadczyli traumy szeroko rozumianej lub potrzebują wsparcia w zakresie utraty zdrowia lub życia osoby bliskiej, potrzebują wsparcia w procesie redukcji lub przyrostu wagi ciała, doświadczają kryzysu w związku, na płaszczyźnie zawodowej, pracuję z rodzicami, którzy mają trudność w relacji z dzieckiem, a także pomiędzy rodzicami, Jako  oligofrenopedagogik z certyfikatem terapii TUS pracuje z dziećmi i młodzieżą z: zaburzeniami rozwojowymi, zagrożonych niedostosowaniem społecznym, mającymi trudności w relacjach z rówieśnikami, problemy z komunikacją interpersonalną, w spektrum autyzmu w tym zespołem Aspergera',
     photoPath: 'replacement-clipo.png'
   },
-  {
-    slug: 'konrad-knop',
-    fullName: 'Konrad Knop',
-    title: 'dr. n. med.',
-    specialisation: 'Psycholog',
-    bio: 'Ukończył całościowe szkolenie psychoterapeutyczne oraz szkolenie z zakresu terapii rodzin – oba organizowane przez Zakład Terapii Rodzin Katedry Psychiatrii Colegium Medicum Uniwersytetu Jagielońskiego w Krakowie. W ramach swojej pracy doktorskiej zajmował się psychologicznymi aspektami otyłości. Doświadczenie w pracy klinicznej zdobywał min. pracując przez wiele lat w Klinice Psychiatrii Młodzieżowej Centralnego Szpitala Klinicznego w Łodzi. O psychoterapii myśli jako o możliwości rozwoju, lepszego rozumienia i radzenia sobie oraz pełniejszego życia.',
-    photoPath: 'kknop.png'
-  },
+  // {
+  //   slug: 'konrad-knop',
+  //   fullName: 'Konrad Knop',
+  //   title: 'dr. n. med.',
+  //   specialisation: 'Psycholog',
+  //   bio: 'Ukończył całościowe szkolenie psychoterapeutyczne oraz szkolenie z zakresu terapii rodzin – oba organizowane przez Zakład Terapii Rodzin Katedry Psychiatrii Colegium Medicum Uniwersytetu Jagielońskiego w Krakowie. W ramach swojej pracy doktorskiej zajmował się psychologicznymi aspektami otyłości. Doświadczenie w pracy klinicznej zdobywał min. pracując przez wiele lat w Klinice Psychiatrii Młodzieżowej Centralnego Szpitala Klinicznego w Łodzi. O psychoterapii myśli jako o możliwości rozwoju, lepszego rozumienia i radzenia sobie oraz pełniejszego życia.',
+  //   photoPath: 'kknop.png'
+  // },
   {
     slug: 'wojciech-ciebiada',
     fullName: 'Wojciech Ciebiada',
@@ -128,4 +128,20 @@ export const specialists: Specialist[] = [
     bio: 'Fizjoterapia i tajemnice ludzkiego ciała od zawsze były jego pasją, dlatego stale poszerza swoje kompetencje biorąc udział w licznych kursach m.in. Nowoczesna medycyna ortopedyczna wg.- Cyriaxa, mobilizacje stawów Mulligana. Interesuje się także wykorzystaniem i badaniem usg narządu ruchu i zabiegami fizykalnymi pod kontrolą usg. Jest certyfikowanym terapeutą EPTE. Ukończył kurs usg mięśniowo – szkieletowego z elementami aplikacji w reumatologii. W swojej pracy skupia się na indywidualnych potrzebach każdego pacjenta oraz wykorzystuje nowoczesny sprzęt i innowacyjne podejście.',
     photoPath: 'wciebiada.webp'
   },
+  {
+    slug: 'ewa-kolodziejczyk',
+    fullName: 'Ewa Kołodziejczyk',
+    title: 'mgr.',
+    specialisation: 'Fizjoterapeutka uroginekologiczna',
+    bio: '',
+    photoPath: 'replacement-clipo.png'
+  },
+  {
+    slug: 'wojciech-stawerski',
+    fullName: 'Wojciech Stawerski',
+    title: 'mgr.',
+    specialisation: 'Fizjoterapeuta',
+    bio: '',
+    photoPath: 'replacement-clipo.png'
+  }
 ]
