@@ -141,12 +141,12 @@ function Home() {
 
     return (
         <>
-            <section className={`landing__page py-80 flex justify-center z-10`}>
-                <div className={`flex flex-col text-center cursor-default`}>
-                    <h1 className={`text-8xl font-bold text-green-500 drop-shadow-sm`}>CLiPO</h1>
+            <section className={`landing__page aspect-video w-full flex justify-center z-10`}>
+                <div className={`flex flex-col justify-center text-center cursor-default`}>
+                    <h1 className={`text-5xl md:text-8xl font-bold text-green-500 drop-shadow-sm`}>CLiPO</h1>
                     <div className={`flex justify-between text-white`}>
-                        <a className={`bg-slate-900 py-2 px-10 font-bold text-2xl rounded-full hover:opacity-95 transition-all duration-150`} href="#o-nas">O Nas</a>
-                        <a className={`py-2 drop-shadow-sm font-bold text-2xl underline decoration-solid hover:opacity-95 transition-all duration-150`} href="#kontakt">Kontakt</a>
+                        <a className={`bg-slate-900 px-5 md:py-2 md:px-10 font-bold text-base md:text-2xl rounded-full hover:opacity-95 transition-all duration-150`} href="/#o-nas">O Nas</a>
+                        <a className={`md:py-2 ml-2 md:ml-0 font-bold text-base md:text-2xl underline decoration-solid hover:opacity-95 transition-all duration-150 text-white drop-shadow-[0_10px_10px_rgba(0,0,0,1)]`} href="/#kontakt">Kontakt</a>
                     </div>
                 </div>
             </section>

@@ -58,7 +58,7 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
     background-image: url('/bg-image-clipo.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .logo {
