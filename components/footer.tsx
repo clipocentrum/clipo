@@ -37,19 +37,19 @@ const Footer = () => {
             </span>
         </div>
         <div className={`py-2 lg:pl-2 flex flex-col lg:border-l lg:border-opacity-80`}>
-            <a href="#" className={`footer__link`}>
+            <a target='_blank' href="/pdf/certyfikat-kompleksowego-leczenia-choroby-otylosciowej.pdf" className={`footer__link`}>
                 Certyfikat kompleksowego leczenia choroby otyłościowej
             </a>
-            <a href="#" className={`footer__link`}>
+            <a target='_blank' href="/pdf/polityka-ochrony-danych-osobowych.pdf" className={`footer__link`}>
                 Polityka ochrony danych osobowych
             </a>
-            <a href="#" className={`footer__link`}>
+            <a target='_blank' href="/pdf/klauzula-informacyjna-dla-klientow-innych-niz-uslug-medycznych-i-kontrahentow-clipo.pdf" className={`footer__link`}>
                 Klauzula informacyjna dla klientów innych niż usług medycznych i kontrahentów CLIPO
             </a>
-            <a href="#" className={`footer__link`}>
+            <a target='_blank' href="/pdf/klauzula-informacyjna-dla-klientow-clipo-z-zakresu-uslug-medycznych.pdf" className={`footer__link`}>
                 Klauzula informacyjna dla klientów CLIPO z zakresu usług medycznych
             </a>
-            <a href="#" className={`footer__link`}>
+            <a target='_blank' href="/pdf/subwencja-PFR.jpg" className={`footer__link`}>
                 Subwencja z PFR
             </a>
         </div>

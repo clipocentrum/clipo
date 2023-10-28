@@ -25,7 +25,7 @@ function Specialista({params}: {params: {id: string}}){
 
                 {
                     specialist?.certificate &&
-                    <section className={`certificate`}>
+                    <section className={`certificate`} id='certyfikat' >
                         <Image src={`/photos/${specialist.certificate}`} width={500} height={500} alt={`Certyfikat PTLO dla ${specialist.fullName}`} />
                     </section>
                 }

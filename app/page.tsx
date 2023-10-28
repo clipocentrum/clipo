@@ -168,14 +168,14 @@ function Home() {
                             ))
                         }
                     </div>
-                    <button onClick={() => setRevealed(prev => !prev)} className={`text-white font-bold flex gap-2 justify-center items-center w-full text-2xl z-10 relative hover:text-green-500 transition-all duration-150 py-2`} > 
-                        <span className={`${isRevealed && 'rotate-90'} transition-all duration-150 text-green-500`}>
+                    <button onClick={() => setRevealed(prev => !prev)} className={`text-white font-bold flex gap-2 justify-center items-center w-full text-2xl z-10 relative hover:text-green-500 transition-all duration-300 py-2`} > 
+                        <span className={`${isRevealed && 'rotate-90'} transition-all duration-300 text-green-500`}>
                             <HiOutlineChevronRight />
                         </span>
                         Zobacz pelny cennik
                     </button>
                 </div>
-                <div className={`grid grid-cols-1 transition-all duration-150 origin-top scale-y-0 h-0 ${isRevealed && 'revealed'}`}>
+                <div className={`grid grid-cols-1 transition-all duration-300 origin-top scale-y-0 h-0 ${isRevealed && 'revealed'}`}>
                     {
                         fullServices.map(({service, price}) => (
                             <div className={`table__cell `} key={service}>
@@ -254,9 +254,6 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* <button onClick={scrollTop} className={`${isVisible && 'scale-0'} fixed bg-green-600 w-12 aspect-square lg:w-20 lg:h-20 right-0 bottom-0 text-4xl flex justify-center items-center m-2 text-white rounded-full opacity-60 hover:opacity-95 transition-all duration-150 outline outline-white border border-transparent z-50`}>
-                <HiOutlineArrowSmallUp />
-            </button> */}
         </>
     );
 }
