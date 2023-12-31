@@ -17,6 +17,9 @@ const Header = (props: {isVisible: boolean}) => {
           <a target='_blank' href="https://www.facebook.com/CLiPOpl" className={`header_link ${!props.isVisible && 'text-5xl hover:opacity-90 p-0 hover:text-white border-transparent hover:border-transparent'}`}>
             <BsFacebook />
           </a>
+          <span className={`${props.isVisible && 'hidden'} text-white flex justify-center items-center ml-5 text-xs md:text-md md:font-bold lg:text-lg`}>
+            CLiPO | Centrum Leczenia i Profilaktyki Otylosci
+          </span>
         </div>
 
         <button onClick={() => setOpened(prev => !prev)} className={`header_burger-btn font-light text-white text-4xl text-center flex justify-center align-center px-4 py-2 z-50 my-auto`}>{isOpened ? <HiXMark /> : <HiBars2 />}</button>
@@ -31,7 +34,7 @@ const Header = (props: {isVisible: boolean}) => {
                 <span className={`nav_icon`}>
                   <HiOutlineHome />
                 </span>
-                Strona glowna
+                Strona głowna
               </a>
             </li>
             <li className={`nav_el`}>
@@ -47,7 +50,7 @@ const Header = (props: {isVisible: boolean}) => {
                 <span className={`nav_icon`}>
                   <HiOutlineSwatch />
                 </span>
-                Uslugi
+                Usługi
               </a>
             </li>
             <li className={`nav_el`}>
@@ -55,7 +58,7 @@ const Header = (props: {isVisible: boolean}) => {
                 <span className={`nav_icon`}>
                   <HiOutlineUserGroup />
                 </span>
-                Nasi specjalisci
+                Nasi specjaliści
               </a>
             </li>
             <li className={`nav_el`}>
@@ -63,7 +66,7 @@ const Header = (props: {isVisible: boolean}) => {
                 <span className={`nav_icon`}>
                   <HiOutlineQuestionMarkCircle />
                 </span>
-                Najczesciej zadawane pytania
+                Najczęściej zadawane pytania
               </a>
             </li>
             <li className={`nav_el`}>

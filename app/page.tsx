@@ -53,7 +53,7 @@ function Home() {
             isDL: false
         },
         {
-            service: 'Analiza skladu ciala z omowieniem',
+            service: 'Analiza składu ciała z omówieniem',
             price: 'od 50 zl',
             isDL: true
         },
@@ -176,11 +176,25 @@ function Home() {
                 <h1 className={`font-bold text-4xl`}>
                     O Nas
                 </h1>
-                <p className={`text-xl py-2`}>
-                    Centrum Medyczne CLiPO, to miejsce w którym pomoc otrzymają wszyscy Pacjenci borykający się z problemami endokrynologicznymi, metabolicznymi bądź otyłością. Współpracujemy z najlepszymi specjalistami, którzy kompleksowo zajmują się zdrowiem zarówno dzieci, jak i dorosłych. Naszym celem jest poprawa stanu wiedzy społeczeństwa na temat prawidłowego żywienia i roli aktywności fizycznej. Wierzymy, że promując zdrowy styl życia przyczynimy się do zahamowania epidemii otyłości, szczególnie wśród dzieci i młodzieży. Aby zapewnić Państwu najwyższej jakości opiekę, nieustannie poszerzamy i aktualizujemy swoją wiedzę zgodnie z najnowszymi wytycznymi. Nasz główny diabetolog – dr Małgorzata Szałapska jest lekarzem certyfikowanym przez Polskie Towarzystwo Leczenia Otyłości, co gwarantuje Państwu dostęp do nowoczesnych metod terapeutycznych.
-                </p>
+                <span className={`wrapper flex flex-col lg:flex-row`}>
+                    <p className={`text-xl py-2 flex-2`}>
+                        Centrum Medyczne CLiPO, to miejsce w którym pomoc otrzymają wszyscy Pacjenci borykający się z problemami endokrynologicznymi, metabolicznymi bądź otyłością. Współpracujemy z najlepszymi specjalistami, którzy kompleksowo zajmują się zdrowiem zarówno dzieci, jak i dorosłych. Naszym celem jest poprawa stanu wiedzy społeczeństwa na temat prawidłowego żywienia i roli aktywności fizycznej. Wierzymy, że promując zdrowy styl życia przyczynimy się do zahamowania epidemii otyłości, szczególnie wśród dzieci i młodzieży. Aby zapewnić Państwu najwyższej jakości opiekę, nieustannie poszerzamy i aktualizujemy swoją wiedzę zgodnie z najnowszymi wytycznymi. Nasz główny diabetolog – dr Małgorzata Szałapska jest lekarzem certyfikowanym przez Polskie Towarzystwo Leczenia Otyłości, co gwarantuje Państwu dostęp do nowoczesnych metod terapeutycznych.
+                    </p>
+                    <img src="/photos/mszalapska-certificate.webp" alt="certyfikat kompleksowego leczenia choroby otylosciowej" className={`about-certificate flex-1`} />
+                </span>
+                
             </section>
-            <section id='uslugi' className={`services relative`}>
+            <section id='nasi-specjalisci' className={`our__specialists p-1 md:p-3 border-b-2 border-opacity-40 relative`}>
+                <h1 className={`h1`}>Nasi specjalisci</h1>
+                <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 xl:grid-cols-6 place-items-center`}>
+                    {
+                        specialists.map((el) => (
+                            <Specialist specialist={el} />
+                        ))
+                    }
+                </div>
+            </section>
+            <section id='uslugi' className={`services relative ${isRevealed ? 'pb-0' : 'pb-1 '}`}>
                 <div className={`relative`}>
                     <div className={`radial z-0`} />
                     <div className={`services__grid grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-1 xl:grid-cols-5 place-items-center z-10`}>
@@ -210,16 +224,6 @@ function Home() {
                     <div className={`table__cell grid-cols-1 font-bold text-xl`}>
                         <button onClick={() => setRevealed(prev => !prev)}className={`transition-all duration-150 underline hover:text-green-500`}>Zamknij</button>
                     </div>
-                </div>
-            </section>
-            <section id='nasi-specjalisci' className={`our__specialists p-1 md:p-3 border-t-2 relative`}>
-                <h1 className={`h1`}>Nasi specjalisci</h1>
-                <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 xl:grid-cols-6 place-items-center`}>
-                    {
-                        specialists.map((el) => (
-                            <Specialist specialist={el} />
-                        ))
-                    }
                 </div>
             </section>
             <section id='faq' className={`faq border-b-1`}>
