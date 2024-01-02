@@ -70,13 +70,12 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
     background-image: url('/bg-image-clipo.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .logo {
     background-image: url('/clipo-logo.png');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 

@@ -43,28 +43,13 @@ function Home() {
     ]
     const services = [
         {
-            service: 'Konsultacje profesorskie, doktorskie, lekarskie',
-            price: 'od 180 zl',
+            service: 'Konsultacje specjalistyczne',
+            price: 'od 180 zł',
             isDL: true
         },
         {
             service: 'Konsultacje dietetyczne',
-            price: 'od 150 zl',
-            isDL: false
-        },
-        {
-            service: 'Analiza składu ciała z omówieniem',
-            price: 'od 50 zl',
-            isDL: true
-        },
-        {
-            service: 'USG tarczycy',
-            price: '170 zl',
-            isDL: false
-        },
-        {
-            service: 'Biopsja',
-            price: '300 zl',
+            price: 'od 150 zł',
             isDL: false
         },
     ]
@@ -72,98 +57,93 @@ function Home() {
         {
             service: 'prof. dr hab. n. med. Renata Stawerska: konsultacja',
             specialisation: 'Endokrynologia dla dzieci i młodzieży',
-            price: '280 zl'
+            price: '280 zł'
         },
         {
             service: 'dr n. med. Anna Łupińska: konsultacja',
             specialisation: 'Endokrynologia dla dzieci i młodzieży',
-            price: '230 zl'
+            price: '230 zł'
         },
-        // {
-        //     service: 'lek. med. Krzysztof Stanek: konsultacja',
-        //     price: '230 zl'
-        // },
-        // {
-        //     service: 'lek. med. Krzysztof Stanek: USG tarczycy u dzieci',
-        //     price: '150 zl'
-        // },
-        // {
-        //     service: 'lek. med. Krzysztof Stanek: konsultacja + USG',
-        //     price: '300 zl'
-        // },
         {
             service: 'dr n. med. Katarzyna Dąbrowska: konsultacja',
             specialisation: 'Endokrynologia dla dorosłych',
-            price: '220 zl'
+            price: '220 zł'
         },
         {
             service: 'dr n. med. Katarzyna Dąbrowska: konsultacja + USG',
             specialisation: 'Endokrynologia dla dorosłych',
-            price: '300 zl'
+            price: '300 zł'
         },
         {
             service: 'dr n. med. Małgorzata Szałapska: konsultacja',
             specialisation: 'Diabetologia, Pediatria',
-            price: '250 zl'
+            price: '250 zł'
         },
         {
             service: 'lek. med. Agnieszka Kucińska: konsultacja',
             specialisation: 'Interna, Diabetologia',
-            price: '200 zl'
+            price: '200 zł'
         },
         {
             service: 'dr n. med. Jadwiga Kaczmarek: konsultacja',
             specialisation: 'Alergologia',
-            price: '200 zl'
+            price: '200 zł'
         },
         {
             service: 'dietetyk kliniczny Katarzyna Łokieć: wizyta + dieta',
             specialisation: 'Dietetyka',
-            price: '200 zl'
+            price: '200 zł'
         },
         {
             service: 'mgr Magdalena Grobelna: wizyta + dieta',
             specialisation: 'Dietetyka',
-            price: '150 zl'
+            price: '150 zł'
         },
         {
             service: 'lek. med. Krystian Słodkowski: wizyta',
             specialisation: 'Urologia dla dorosłych',
-            price: '180 zl'
+            price: '180 zł'
         },
-        // {
-        //     service: 'prof. dr hab. n. med. Andrzej Lewiński',
-        //     price: '280 zl'
-        // },
-        // {
-        //     service: 'dr n. med. Konrad Knop: wizyta',
-        //     price: '180 zl'
-        // },
         {
             service: 'mgr. Agnieszka Kwiatkowska-Milbrandt: wizyta',
             specialisation: 'Terapia',
-            price: '150 zl'
+            price: '150 zł'
         },
         {
             service: 'Ewa Kołodziejczyk: konsujtacja',
             specialisation: 'Fizjoterapia Urogienekologiczna',
-            price: '160 zl'
+            price: '160 zł'
         },
         {
             service: 'mgr. Wojciech Stawerski: konsultacja, trening personalny',
             specialisation: 'Fizjoterapia',
-            price: '90 zl'
+            price: '90 zł'
+        },
+        {
+            service: 'Biopsia',
+            specialisation: 'n/d',
+            price: '300 zł'
+        },
+        {
+            service: 'USG tarczyc',
+            specialisation: 'n/d',
+            price: '170 zł'
+        },
+        {
+            service: 'Analiza składu ciała z omówieniem',
+            specialisation: 'n/d',
+            price: 'od 50 zł'
         },
         {
             service: 'Recepta',
             specialisation: 'n/d',
-            price: '80 zl'
+            price: '80 zł'
         },
     ]
 
     return (
         <>
-            <section className={`landing__page aspect-video w-full flex justify-center z-10`}>
+            <section className={`landing__page aspect-video bg-contain flex justify-center z-10`}>
                 <div className={`flex flex-col justify-center text-center cursor-default`}>
                     <h1 className={`text-5xl md:text-8xl font-bold text-green-500 drop-shadow-sm`}>CLiPO</h1>
                     <div className={`flex justify-between text-white`}>
@@ -194,10 +174,10 @@ function Home() {
                     }
                 </div>
             </section>
-            <section id='uslugi' className={`services relative ${isRevealed ? 'pb-0' : 'pb-1 '}`}>
+            <section id='uslugi' className={`services relative pb-0`}>
                 <div className={`relative`}>
                     <div className={`radial z-0`} />
-                    <div className={`services__grid grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-1 xl:grid-cols-5 place-items-center z-10`}>
+                    <div className={`services__grid flex flex-wrap justify-center gap-10 px-2 place-items-center z-10`}>
                         {
                             services.map(({service, price}) => (
                                 <ServiceCard service={service} price={price} key={service} />
