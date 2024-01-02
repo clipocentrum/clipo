@@ -52,6 +52,11 @@ function Home() {
             price: 'od 150 zł',
             isDL: false
         },
+        {
+            service: 'Analiza składu ciała z omówieniem',
+            price: 'od 50 zł',
+            isDL: false
+        }
     ]
     const fullServices = [
         {
@@ -126,10 +131,6 @@ function Home() {
         {
             service: 'USG tarczyc',
             price: '170 zł'
-        },
-        {
-            service: 'Analiza składu ciała z omówieniem',
-            price: 'od 50 zł'
         },
         {
             service: 'Recepta',
