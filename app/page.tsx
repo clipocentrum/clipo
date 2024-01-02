@@ -121,22 +121,18 @@ function Home() {
         },
         {
             service: 'Biopsia',
-            specialisation: 'n/d',
             price: '300 zł'
         },
         {
             service: 'USG tarczyc',
-            specialisation: 'n/d',
             price: '170 zł'
         },
         {
             service: 'Analiza składu ciała z omówieniem',
-            specialisation: 'n/d',
             price: 'od 50 zł'
         },
         {
             service: 'Recepta',
-            specialisation: 'n/d',
             price: '80 zł'
         },
     ]
@@ -193,7 +189,7 @@ function Home() {
                 </div>
                 <div className={`grid grid-cols-1 transition-all duration-300 origin-top scale-y-0 h-0 ${isRevealed && 'revealed'}`}>
                     {
-                        fullServices.map(({service, specialisation, price}) => (
+                        fullServices.map(({service, specialisation = "", price}) => (
                             <div className={`table__cell `} key={service}>
                                 <span className={`cell__title`}>{service}</span>
                                 <span className={`cell__specialisation`}>{specialisation}</span>
