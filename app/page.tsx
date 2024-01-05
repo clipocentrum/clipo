@@ -157,7 +157,7 @@ function Home() {
                     <p className={`text-xl py-2 flex-2`}>
                         Centrum Medyczne CLiPO, to miejsce w którym pomoc otrzymają wszyscy Pacjenci borykający się z problemami endokrynologicznymi, metabolicznymi bądź otyłością. Współpracujemy z najlepszymi specjalistami, którzy kompleksowo zajmują się zdrowiem zarówno dzieci, jak i dorosłych. Naszym celem jest poprawa stanu wiedzy społeczeństwa na temat prawidłowego żywienia i roli aktywności fizycznej. Wierzymy, że promując zdrowy styl życia przyczynimy się do zahamowania epidemii otyłości, szczególnie wśród dzieci i młodzieży. Aby zapewnić Państwu najwyższej jakości opiekę, nieustannie poszerzamy i aktualizujemy swoją wiedzę zgodnie z najnowszymi wytycznymi. Nasz główny diabetolog – dr Małgorzata Szałapska jest lekarzem certyfikowanym przez Polskie Towarzystwo Leczenia Otyłości, co gwarantuje Państwu dostęp do nowoczesnych metod terapeutycznych.
                     </p>
-                    <img src="/photos/mszalapska-certificate.webp" alt="certyfikat kompleksowego leczenia choroby otylosciowej" className={`about-certificate flex-1`} />
+                    <img src="/pdf/certyfikat-kompleksowego-leczenia-choroby-otylosciowej.pdf" alt="certyfikat kompleksowego leczenia choroby otylosciowej" className={`about-certificate flex-1 w-[75%] mx-auto lg:w-[25%] lg:mx-0`} />
                 </span>
                 
             </section>
