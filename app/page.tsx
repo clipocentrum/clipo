@@ -14,7 +14,7 @@ function Home() {
     const questions = [
         {
             question: 'Czy w Centrum Medycznym CLiPO pomoc otrzymają jedynie otyli Pacjenci?',
-            answer: 'W naszym Centrum pomoc otrzymają wszyscy Pacjenci posiadający problemy endokrynologiczne oraz metaboliczne. Nie jest istotne czy są otyli.'
+            answer: 'W naszym Centrum pomoc otrzymają wszyscy Pacjenci posiadający problemy endokrynologiczne oraz metaboliczne. Nie jest istotne czy są otyli. A Pacjenci innych specjalistów? np urologa czy alergeologa? Ja bym to zmieniła, bo to półprawda i zawęża specyfikę'
         },
         {
             question: 'Czy endokrynolodzy w CLiPO zajmują się problemami niskorosłości u dzieci?',
@@ -29,8 +29,8 @@ function Home() {
             answer: 'Pierwsza konsultacja u dietetyka opiera się przede wszystkim na wywiadzie dotyczącym Państwa stanu zdrowia oraz nawyków żywieniowych. Na specjalistycznej wadze dokonywana jest analiza składu ciała, która jest następnie omawiana przez nasze specjalistki. W ramach wizyty otrzymują Państwo siedmiodniowy jadłospis. Są to podstawowe elementy wizyty u dietetyka. Pamiętać należy, że każdy z nas jest inny i ma inne problemy oraz oczekiwania, dlatego w CLiPO skupiamy się na mocno indywidualnym podejściu do Pacjentów.'
         },
         {
-            question: ' Jak przygotować się do wizyty u dietetyka.',
-            answer: 'W trakcie wizyty przeprowadzamy specjalistyczne badanie składu ciała. Aby badanie było jak najbardziej rzetelne, warto wykonać je na czczo lub, jeżeli wizyta wyznaczona jest w godzinach popołudniowych czy wieczornych, około 2 godzin po ostatnim posiłku. Przed wizytą warto spisać 3-dniowy dzienniczek dietetyczny oraz sporządzić listę produktów lubianych i nielubianych.'
+            question: 'Jak przygotować się do wizyty u dietetyka?',
+            answer: 'W trakcie wizyty przeprowadzamy specjalistyczne badanie składu ciała. Aby badanie było jak najbardziej rzetelne, warto wykonać je na czczo lub, jeżeli wizyta wyznaczona jest w godzinach popołudniowych czy wieczornych, około 2 godzin po ostatnim posiłku. Przed wizytą warto spisać 3-dniowy dzienniczek dietetyczny oraz sporządzić listę produktów lubianych i nielubianych oraz przygotować wyniki badać i dokumentację medyczną.'
         },
         {
             question: 'Czy przed wizytą u dietetyka należy zrobić jakieś badania?',
@@ -85,7 +85,7 @@ function Home() {
             price: '250 zł'
         },
         {
-            service: 'lek. med. Agnieszka Kucińska: konsultacja',
+            service: 'lek. Agnieszka Kucińska: konsultacja',
             specialisation: 'Interna, Diabetologia',
             price: '200 zł'
         },
@@ -95,7 +95,7 @@ function Home() {
             price: '200 zł'
         },
         {
-            service: 'dietetyk kliniczny Katarzyna Łokieć: wizyta + dieta',
+            service: 'dr n. med. Katarzyna Łokieć: wizyta + dieta',
             specialisation: 'Dietetyka',
             price: '200 zł'
         },
@@ -105,59 +105,93 @@ function Home() {
             price: '150 zł'
         },
         {
-            service: 'lek. med. Krystian Słodkowski: wizyta',
+            service: 'lek. Krystian Słodkowski: wizyta',
             specialisation: 'Urologia dla dorosłych',
             price: '180 zł'
         },
         {
-            service: 'mgr. Agnieszka Kwiatkowska-Milbrandt: wizyta',
+            service: 'Agnieszka Kwiatkowska-Milbrandt: wizyta',
             specialisation: 'Terapia',
             price: '150 zł'
         },
         {
-            service: 'Ewa Kołodziejczyk: konsujtacja',
+            service: 'lek. Ewa Kołodziejczyk: konsujtacja',
             specialisation: 'Fizjoterapia Urogienekologiczna',
-            price: '160 zł'
+            price: '180 zł'
         },
         {
-            service: 'mgr. Wojciech Stawerski: konsultacja, trening personalny',
+            service: 'lek. Wojciech Stawerski: konsultacja, trening personalny',
             specialisation: 'Fizjoterapia',
             price: '90 zł'
         },
         {
-            service: 'Biopsia',
+            service: 'prof. dr hab. n. med. Katarzyna Cypryk: konsultacja',
+            specialisation: 'Diabetologia',
+            price: '280 zł'
+        },
+        {
+            service: 'prof. dr hab. n. med. Kryspin Cypryk: Usg bioder i narządów ruchu',
+            specialisation: 'Ortopedia',
+            price: '200 zł'
+        },
+        {
+            service: 'Joga kręgosłupa 1h',
+            price: '35 zł'
+        },
+        {
+            service: 'Karnet 4 wejść na jogę  1 mieś.',
+            price: '120 zł'
+        },
+        {
+            service: 'Karnet 8 wejścia na jogę  2 mieś.',
+            price: '220 zł'
+        },
+        {
+            service: 'Zajęcia fitness 1 wejście',
+            price: '25 zł'
+        },
+        {
+            service: 'Zajęcia fitness karnet na 4 wejścia 1 mieś.',
+            price: '90 zł'
+        },
+        {
+            service: 'Trening EMS',
+            price: '150 zł'
+        },
+        {
+            service: 'Biopsja',
             price: '300 zł'
         },
         {
-            service: 'USG tarczyc',
+            service: 'USG tarczycy',
             price: '170 zł'
         },
         {
             service: 'Recepta',
             price: '80 zł'
-        },
+        }
     ]
 
     return (
         <>
             <section className={`landing__page aspect-video bg-contain flex justify-center z-10`}>
                 <div className={`flex flex-col justify-center text-center cursor-default`}>
-                    <h1 className={`text-5xl md:text-8xl font-bold text-green-500 drop-shadow-sm`}>CLiPO</h1>
+                    <h1 className={`text-5xl md:text-8xl font-bold text-teal-600 drop-shadow-sm`}>CLiPO</h1>
                     <div className={`flex justify-between text-white`}>
                         <a className={`bg-slate-900 px-5 md:py-2 md:px-10 font-bold text-base md:text-2xl rounded-full hover:opacity-95 transition-all duration-150`} href="/#o-nas">O Nas</a>
                         <a className={`md:py-2 ml-2 md:ml-0 font-bold text-base md:text-2xl underline decoration-solid hover:opacity-95 transition-all duration-150 text-white drop-shadow-[0_10px_10px_rgba(0,0,0,1)]`} href="/#kontakt">Kontakt</a>
                     </div>
                 </div>
             </section>
-            <section id='o-nas' className={`about__us bg-green-500 w-full px-5 py-2 text-white`}>
+            <section id='o-nas' className={`about__us bg-teal-600 w-full px-5 py-2 text-white`}>
                 <h1 className={`font-bold text-4xl`}>
                     O Nas
                 </h1>
                 <span className={`wrapper flex flex-col lg:flex-row`}>
-                    <p className={`text-xl py-2 flex-2`}>
-                        Centrum Medyczne CLiPO, to miejsce w którym pomoc otrzymają wszyscy Pacjenci borykający się z problemami endokrynologicznymi, metabolicznymi bądź otyłością. Współpracujemy z najlepszymi specjalistami, którzy kompleksowo zajmują się zdrowiem zarówno dzieci, jak i dorosłych. Naszym celem jest poprawa stanu wiedzy społeczeństwa na temat prawidłowego żywienia i roli aktywności fizycznej. Wierzymy, że promując zdrowy styl życia przyczynimy się do zahamowania epidemii otyłości, szczególnie wśród dzieci i młodzieży. Aby zapewnić Państwu najwyższej jakości opiekę, nieustannie poszerzamy i aktualizujemy swoją wiedzę zgodnie z najnowszymi wytycznymi. Nasz główny diabetolog – dr Małgorzata Szałapska jest lekarzem certyfikowanym przez Polskie Towarzystwo Leczenia Otyłości, co gwarantuje Państwu dostęp do nowoczesnych metod terapeutycznych.
+                    <p className={`text-xl py-2 mx-2 text-justify`}>
+                        Centrum Medyczne CLiPO, to miejsce, w którym pomoc otrzymają wszyscy Pacjenci borykający się z otyłością, ale także problemami endokrynologicznymi, metabolicznymi czy gastrologicznymi. Współpracujemy z najlepszymi specjalistami, którzy kompleksowo zajmują się zdrowiem zarówno dzieci jak i dorosłych. Naszym celem jest poprawa stanu wiedzy społeczeństwa na temat prawidłowego żywienia i roli aktywności fizycznej. Wierzymy, że promując zdrowy styl życia przyczynimy się do zahamowania epidemii otyłości, szczególnie wśród dzieci i młodzieży. W celu zapewnienia Państwu opieki najwyższej jakości, nieustannie poszerzamy i aktualizujemy swoją wiedzę zgodnie z najnowszymi wytycznymi. Dr Małgorzata Szałapska, nasz główny diabetolog, jest lekarzem certyfikowanym przez Polskie Towarzystwo Leczenia Otyłości, co gwarantuje Państwu dostęp do nowoczesnych metod terapeutycznych.
                     </p>
-                    <img src="/pdf/certyfikat-kompleksowego-leczenia-choroby-otylosciowej.pdf" alt="certyfikat kompleksowego leczenia choroby otylosciowej" className={`about-certificate flex-1 w-[75%] mx-auto lg:w-[25%] lg:mx-0`} />
+                    <img src="/pdf/certyfikat-kompleksowego-leczenia-choroby-otylosciowej.jpeg" alt="certyfikat kompleksowego leczenia choroby otylosciowej" className={`about-certificate flex-1 w-[75%] mx-auto lg:w-[25%] bg-cover lg:mx-0`} />
                 </span>
                 
             </section>
@@ -181,11 +215,11 @@ function Home() {
                             ))
                         }
                     </div>
-                    <button onClick={() => setRevealed(prev => !prev)} className={`text-white font-bold flex gap-2 justify-center items-center w-full text-2xl z-10 relative hover:text-green-500 transition-all duration-300 py-2`} > 
-                        <span className={`${isRevealed && 'rotate-90'} transition-all duration-300 text-green-500`}>
+                    <button onClick={() => setRevealed(prev => !prev)} className={`text-white font-bold flex gap-2 justify-center items-center w-full text-2xl z-10 relative hover:text-teal-600 transition-all duration-300 py-2`} > 
+                        <span className={`${isRevealed && 'rotate-90'} transition-all duration-300 text-teal-600`}>
                             <HiOutlineChevronRight />
                         </span>
-                        Zobacz pelny cennik
+                        Zobacz pełny cennik
                     </button>
                 </div>
                 <div className={`grid grid-cols-1 transition-all duration-300 origin-top scale-y-0 h-0 ${isRevealed && 'revealed'}`}>
@@ -199,7 +233,7 @@ function Home() {
                         ))
                     }
                     <div className={`table__cell grid-cols-1 font-bold text-xl`}>
-                        <button onClick={() => setRevealed(prev => !prev)}className={`transition-all duration-150 underline hover:text-green-500`}>Zamknij</button>
+                        <button onClick={() => setRevealed(prev => !prev)}className={`transition-all duration-150 underline hover:text-teal-600`}>Zamknij</button>
                     </div>
                 </div>
             </section>
@@ -215,7 +249,7 @@ function Home() {
                 <div className={`radial`} />
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.700528883247!2d19.389570951461806!3d51.84816476195709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb5ceaf7ee581%3A0x261e0f2373fb7736!2sCentrum%20Leczenia%20i%20Profilaktyki%20Oty%C5%82o%C5%9Bci%20%7C%20CLiPO!5e0!3m2!1spl!2ssk!4v1690658611597!5m2!1spl!2ssk" className={`w-full aspect-square rounded-xl lg:translate-x-10 z-40`} style={{border: "0px"}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 <div className={`contact__container bg-slate-700 w-full p-2 rounded-xl -translate-y-10 grid grid-rows-4 lg:-translate-y-0 lg:-translate-x-10 lg:shadow-sm z-40`}>
-                    <h1 className={`text-green-500 text-4xl font-bold text-center self-center`}>Kontakt</h1>
+                    <h1 className={`text-teal-600 text-4xl font-bold text-center self-center`}>Kontakt</h1>
                     <div className={`contact__el flex flex-col `}>
                         <div className={`contact__title text-white underline text-2xl font-bold`}>
                             Biuro:

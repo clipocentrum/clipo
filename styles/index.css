@@ -6,7 +6,7 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
 
 @layer components{
     .header_link {
-        @apply text-center p-3 mx-1 text-white text-2xl md:text-4xl hover:text-green-500 hover:border-green-500 transition-all duration-150 flex justify-center items-center border rounded-full
+        @apply text-center p-3 mx-1 text-white text-2xl md:text-4xl hover:text-teal-600 hover:border-teal-600 transition-all duration-150 flex justify-center items-center border rounded-full
     }
     
     .nav_el {
@@ -14,7 +14,7 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
     }
 
     .nav_link {
-        @apply w-full flex gap-1 items-center transition-all duration-150 hover:text-green-500
+        @apply w-full flex gap-1 items-center transition-all duration-150 hover:text-teal-600
     }
     
     .table__cell {
@@ -30,7 +30,7 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
     }
 
     .cell__price {
-        @apply text-green-500
+        @apply text-teal-600
     }
 
     .h1 {
@@ -46,7 +46,7 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
     }
 
     .contact__icon {
-        @apply text-green-500 text-2xl font-bold
+        @apply text-teal-600 text-2xl font-bold
     }
 
     .company__data {
@@ -94,7 +94,8 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
 
 .specialist {
     opacity: 0.8;
-    background-color: #22c55e;
+    /*background-color: #22c55e;*/
+    background-color: rgb(13 148 136 / 1);;
     background-image: radial-gradient(#1e293b 6px, transparent 6px);
     background-size: 10px 10px;
     background-position: center;
@@ -119,6 +120,6 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
 
 .services {
     background-color: rgba(230, 230, 247, 0);
-    background-image: radial-gradient(#22c55e 0.55px, rgba(230, 230, 247, 0) 0.55px);
+    background-image: radial-gradient(rgb(13 148 136 ) 0.55px, rgba(230, 230, 247, 0) 0.55px);
     background-size: 11px 11px;
 }

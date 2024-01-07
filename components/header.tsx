@@ -9,16 +9,16 @@ const Header = (props: {isVisible: boolean}) => {
   const [isOpened, setOpened] = useState(false);
 
   return (
-    <header className={`fixed top-0 left-0 header flex flex-auto justify-between w-screen  z-50 ${!props.isVisible && 'bg-green-600 drop-shadow-sm'} transition-all duration-150`}>
+    <header className={`fixed top-0 left-0 header flex flex-auto justify-between w-screen  z-50 ${!props.isVisible && 'bg-teal-700 drop-shadow-sm'} transition-all duration-150`}>
         <div className={`header_links flex py-1 px-2`}>
-          <a className={`header_link hover:text-transparent cursor-pointer ${!props.isVisible && 'text-2xl hover:opacity-90 hover:text-transparent border-green-500 hover:border-green-500 '} logo text-transparent`} onClick={() => window.scrollTo(0, 0)} href='/#' >
+          <a className={`header_link hover:text-transparent cursor-pointer ${!props.isVisible && 'text-2xl hover:opacity-90 hover:text-transparent border-teal-600 hover:border-teal-600 '} logo text-transparent`} onClick={() => window.scrollTo(0, 0)} href='/#' >
             <BsInstagram />
           </a>
           <a target='_blank' href="https://www.facebook.com/CLiPOpl" className={`header_link ${!props.isVisible && 'text-5xl hover:opacity-90 p-0 hover:text-white border-transparent hover:border-transparent'}`}>
             <BsFacebook />
           </a>
           <span className={`${props.isVisible && 'hidden'} text-white flex justify-center items-center ml-5 text-xs md:text-md md:font-bold lg:text-lg`}>
-            CLiPO | Centrum Leczenia i Profilaktyki Otylosci
+            CLiPO | Centrum Leczenia i Profilaktyki Otyłosci
           </span>
         </div>
 
