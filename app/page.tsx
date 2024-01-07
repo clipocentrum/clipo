@@ -14,7 +14,7 @@ function Home() {
     const questions = [
         {
             question: 'Czy w Centrum Medycznym CLiPO pomoc otrzymają jedynie otyli Pacjenci?',
-            answer: 'W naszym Centrum pomoc otrzymają wszyscy Pacjenci posiadający problemy endokrynologiczne oraz metaboliczne. Nie jest istotne czy są otyli. A Pacjenci innych specjalistów? np urologa czy alergeologa? Ja bym to zmieniła, bo to półprawda i zawęża specyfikę'
+            answer: 'Pomoc otrzymają wszyscy pacjenci borykający się z chorobą otylosciowa, ale także chorujący na cukrzycę, zaburzenia endykronoligczne i metaboliczne lub choroby przewodu pokarmowego,  ale również pacjenci potrzebujacy pomocy urologicznej, alergologicznej lub ortopedycznej.'
         },
         {
             question: 'Czy endokrynolodzy w CLiPO zajmują się problemami niskorosłości u dzieci?',

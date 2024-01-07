@@ -8,7 +8,7 @@ const Specialist = ({specialist}: {specialist: Specialist}) => {
   
   return (
     <div className={`specialist rounded-xl w-44 md:w-48 flex flex-col justify-center items-center `}>
-        <div className={`specialist__photo w-40 h-40 rounded-full translate-y-10`} style={{
+        <div className={`specialist__photo w-40 h-40 rounded-full translate-y-10 bg-cover`} style={{
           backgroundImage: `url(/photos/${specialist.photoPath})`
         }} />
         <div className={`specialist__container flex flex-col text-white text-center bg-slate-700 w-full rounded-xl pt-10 pb-3`}>
