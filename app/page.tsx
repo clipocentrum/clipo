@@ -2,7 +2,7 @@
 
 import '../styles/index.css'
 import ServiceCard from '../components/service-card';
-import { HiOutlineChevronRight, HiPhone, HiEnvelope, HiMapPin, HiOutlineArrowSmallUp } from 'react-icons/hi2'
+import { HiOutlineChevronRight, HiPhone, HiEnvelope, HiMapPin } from 'react-icons/hi2'
 import { useState } from 'react';
 import Specialist from '../components/specialist';
 import Question from '../components/question';

@@ -95,14 +95,14 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
 .specialist {
     opacity: 0.8;
     /*background-color: #22c55e;*/
-    background-color: rgb(13 148 136 / 1);;
+    background-color: rgb(13 148 136 / 1);
     background-image: radial-gradient(#1e293b 6px, transparent 6px);
     background-size: 10px 10px;
     background-position: center;
 }
 
 .contact {
-    --pattern-color: #22c55e37;
+    --pattern-color: rgb(13 148 136 / .25);
     /* background:
         radial-gradient(circle at 100% 50%, transparent 20%, var(--pattern-color) 21%,
             #22c55e 34%, transparent 35%, transparent),
