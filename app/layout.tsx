@@ -1,6 +1,7 @@
 "use client"
 
 import { HiOutlineArrowSmallUp } from 'react-icons/hi2'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Footer from '../components/footer'
 import Header from '../components/header'
 import '../styles/index.css'
