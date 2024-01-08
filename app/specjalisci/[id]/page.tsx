@@ -2,11 +2,11 @@ import '../../../styles/index.css';
 import { specialists } from '../../../public/specialists';
 import Image from 'next/image';
 
-type Params = {
-    id: string
+interface Params {
+    params: { id: string }
 }
 
-function Specialista(params: Params){
+function Specialista({ params }: Params){
     const res = specialists.filter(spec => spec.slug == params.id)
     const specialist = res[0]
 
