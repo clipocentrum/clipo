@@ -28,6 +28,7 @@ export default function RootLayout({ children }: {children: React.ReactNode}) {
   return (
       <html lang="pl">
         <body className='bg-slate-900'>
+          <SpeedInsights />
           <div ref={ref} />
           <Header isVisible={isVisible} />
           {children}
