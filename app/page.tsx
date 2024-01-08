@@ -14,7 +14,7 @@ function Home() {
     const questions = [
         {
             question: 'Czy w Centrum Medycznym CLiPO pomoc otrzymają jedynie otyli Pacjenci?',
-            answer: 'Pomoc otrzymają wszyscy pacjenci borykający się z chorobą otylosciowa, ale także chorujący na cukrzycę, zaburzenia endykronoligczne i metaboliczne lub choroby przewodu pokarmowego,  ale również pacjenci potrzebujacy pomocy urologicznej, alergologicznej lub ortopedycznej.'
+            answer: 'Pomoc otrzymają wszyscy pacjenci borykający się z chorobą otylosciowa, ale także chorujący na cukrzycę, zaburzenia endokrynologiczne i metaboliczne lub choroby przewodu pokarmowego,  ale również pacjenci potrzebujacy pomocy urologicznej, alergologicznej lub ortopedycznej.'
         },
         {
             question: 'Czy endokrynolodzy w CLiPO zajmują się problemami niskorosłości u dzieci?',
@@ -26,7 +26,7 @@ function Home() {
         },
         {
             question: 'Jak wygląda pierwsza wizyta u dietetyka w CLiPO?',
-            answer: 'Pierwsza konsultacja u dietetyka opiera się przede wszystkim na wywiadzie dotyczącym Państwa stanu zdrowia oraz nawyków żywieniowych. Na specjalistycznej wadze dokonywana jest analiza składu ciała, która jest następnie omawiana przez nasze specjalistki. W ramach wizyty otrzymują Państwo siedmiodniowy jadłospis. Są to podstawowe elementy wizyty u dietetyka. Pamiętać należy, że każdy z nas jest inny i ma inne problemy oraz oczekiwania, dlatego w CLiPO skupiamy się na mocno indywidualnym podejściu do Pacjentów.'
+            answer: 'Pierwsza konsultacja u dietetyka opiera się przede wszystkim na wywiadzie dotyczącym Państwa stanu zdrowia oraz nawyków żywieniowych. Na specjalistycznej wadze dokonywana jest analiza składu ciała, która jest następnie omawiana przez nasze specjalistki. W ramach wizyty otrzymują Państwo siedmiodniowy jadłospis. Pamiętać należy, że każdy z nas jest inny i ma inne problemy oraz oczekiwania, dlatego w CLiPO skupiamy się na mocno indywidualnym podejściu do Pacjentów.'
         },
         {
             question: 'Jak przygotować się do wizyty u dietetyka?',
@@ -189,7 +189,7 @@ function Home() {
                 </h1>
                 <span className={`wrapper flex flex-col lg:flex-row`}>
                     <p className={`text-xl py-2 mx-2 text-justify`}>
-                        Centrum Medyczne CLiPO, to miejsce, w którym pomoc otrzymają wszyscy Pacjenci borykający się z otyłością, ale także problemami endokrynologicznymi, metabolicznymi czy gastrologicznymi. Współpracujemy z najlepszymi specjalistami, którzy kompleksowo zajmują się zdrowiem zarówno dzieci jak i dorosłych. Naszym celem jest poprawa stanu wiedzy społeczeństwa na temat prawidłowego żywienia i roli aktywności fizycznej. Wierzymy, że promując zdrowy styl życia przyczynimy się do zahamowania epidemii otyłości, szczególnie wśród dzieci i młodzieży. W celu zapewnienia Państwu opieki najwyższej jakości, nieustannie poszerzamy i aktualizujemy swoją wiedzę zgodnie z najnowszymi wytycznymi. Dr Małgorzata Szałapska, nasz główny diabetolog, jest lekarzem certyfikowanym przez Polskie Towarzystwo Leczenia Otyłości, co gwarantuje Państwu dostęp do nowoczesnych metod terapeutycznych.
+                         U nas pomoc otrzymają wszyscy pacjenci borykający się z chorobą otyłosciową, ale także chorujący na cukrzycę, zaburzenia endokrynologiczne i metaboliczne lub choroby przewodu pokarmowego. Współpracujemy z najlepszymi specjalistami, którzy kompleksowo zajmują się zdrowiem zarówno dzieci jak i dorosłych. Naszym celem jest poprawa stanu wiedzy społeczeństwa na temat prawidłowego żywienia i roli aktywności fizycznej. Wierzymy, że promując zdrowy styl życia przyczynimy się do zahamowania epidemii otyłości, szczególnie wśród dzieci i młodzieży. W celu zapewnienia Państwu opieki najwyższej jakości, nieustannie poszerzamy i aktualizujemy swoją wiedzę zgodnie z najnowszymi wytycznymi, co gwarantuje Państwu dostęp do nowoczesnych metod terapeutycznych.
                     </p>
                     <img src="/pdf/certyfikat-kompleksowego-leczenia-choroby-otylosciowej.jpeg" alt="certyfikat kompleksowego leczenia choroby otylosciowej" className={`about-certificate flex-1 w-[75%] mx-auto lg:w-[25%] bg-cover lg:mx-0`} />
                 </span>
