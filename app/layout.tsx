@@ -20,6 +20,10 @@ export default function RootLayout({ children }: Props) {
       setVisible(entry.isIntersecting);
     })
     observer.observe(ref.current);
+
+    return () => {
+      observer.unobserve(ref.current);
+    }
   }, [])
 
   const scrollTop = () => {
