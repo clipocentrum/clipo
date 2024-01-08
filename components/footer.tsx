@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react'
-import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs'
+import { BsFacebook } from 'react-icons/bs'
 
 const Footer = () => {
   return (

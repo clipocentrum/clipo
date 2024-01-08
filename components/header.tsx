@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react'
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs"
+import { BsFacebook, BsInstagram } from "react-icons/bs"
 import { HiBars2, HiXMark, HiOutlineHome, HiOutlineIdentification, HiOutlineUserGroup, HiOutlineSwatch, HiOutlineQuestionMarkCircle, HiOutlinePaperAirplane } from "react-icons/hi2"
 import '../styles/index.css'
 

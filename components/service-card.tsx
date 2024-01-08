@@ -2,11 +2,10 @@ import React from 'react'
 import '../styles/index.css'
 
 type Props = {
-  service: string,
-  price: string
+  service: string
 }
 
-const ServiceCard = ({service, price}: Props) => {
+const ServiceCard = ({service}: Props) => {
   return (
     <div className={`service__card w-56 m-2 z-10`}>
         <div className={`service__image w-full h-72 rounded-xl`} />

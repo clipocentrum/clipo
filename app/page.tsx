@@ -1,176 +1,13 @@
 "use client";
 
 import '../styles/index.css'
-import ServiceCard from '../components/service-card';
-import { HiOutlineChevronRight, HiPhone, HiEnvelope, HiMapPin } from 'react-icons/hi2'
 import { useState } from 'react';
-import Specialist from '../components/specialist';
-import Question from '../components/question';
-import { specialists } from '../public/specialists';
+import { Specialist, Question, ServiceCard } from '../components/index';
+import { HiOutlineChevronRight, HiPhone, HiEnvelope, HiMapPin } from 'react-icons/hi2'
+import { specialists, questions, fullServices, services } from '../public/index';
 
 function Home() {
     const [isRevealed, setRevealed] = useState(false);
-
-    const questions = [
-        {
-            question: 'Czy w Centrum Medycznym CLiPO pomoc otrzymają jedynie otyli Pacjenci?',
-            answer: 'Pomoc otrzymają wszyscy pacjenci borykający się z chorobą otylosciowa, ale także chorujący na cukrzycę, zaburzenia endokrynologiczne i metaboliczne lub choroby przewodu pokarmowego,  ale również pacjenci potrzebujacy pomocy urologicznej, alergologicznej lub ortopedycznej.'
-        },
-        {
-            question: 'Czy endokrynolodzy w CLiPO zajmują się problemami niskorosłości u dzieci?',
-            answer: 'Tak. Nasi specjaliści w zakresie endokrynologii dziecięcej pomagają dzieciom z niskim wzrostem oraz każdym innym problemem z zakresu endokrynologii.'
-        },
-        {
-            question: 'Jak można się umówić na wizytę do specjalisty?',
-            answer: 'Aby dokonać rezerwacji terminu u wybranego specjalisty należy zadzwonić pod numer telefonu 502 239 088. Niezbędne będzie podanie imienia i nazwiska oraz numeru telefonu do kontaktu.'
-        },
-        {
-            question: 'Jak wygląda pierwsza wizyta u dietetyka w CLiPO?',
-            answer: 'Pierwsza konsultacja u dietetyka opiera się przede wszystkim na wywiadzie dotyczącym Państwa stanu zdrowia oraz nawyków żywieniowych. Na specjalistycznej wadze dokonywana jest analiza składu ciała, która jest następnie omawiana przez nasze specjalistki. W ramach wizyty otrzymują Państwo siedmiodniowy jadłospis. Pamiętać należy, że każdy z nas jest inny i ma inne problemy oraz oczekiwania, dlatego w CLiPO skupiamy się na mocno indywidualnym podejściu do Pacjentów.'
-        },
-        {
-            question: 'Jak przygotować się do wizyty u dietetyka?',
-            answer: 'W trakcie wizyty przeprowadzamy specjalistyczne badanie składu ciała. Aby badanie było jak najbardziej rzetelne, warto wykonać je na czczo lub, jeżeli wizyta wyznaczona jest w godzinach popołudniowych czy wieczornych, około 2 godzin po ostatnim posiłku. Przed wizytą warto spisać 3-dniowy dzienniczek dietetyczny oraz sporządzić listę produktów lubianych i nielubianych oraz przygotować wyniki badać i dokumentację medyczną.'
-        },
-        {
-            question: 'Czy przed wizytą u dietetyka należy zrobić jakieś badania?',
-            answer: 'Nie, nie jest to konieczne. Jeżeli borykacie się Państwo z jakimiś problemami zdrowotnymi to wskazane jest zabranie wszelkiej dokumentacji medycznej w tym zakresie.'
-        },
-        {
-            question: 'Czy w CLiPO można płacić kartą?',
-            answer: 'W CLiPO można płacić kartą oraz gotówka. Jeżeli korzystacie Państwo z teleporad, e-recept lub diety online formą płatności może być również tradycyjny przelew.'
-        },
-    ]
-    const services = [
-        {
-            service: 'Konsultacje specjalistyczne',
-            price: 'od 180 zł',
-            isDL: true
-        },
-        {
-            service: 'Konsultacje dietetyczne',
-            price: 'od 150 zł',
-            isDL: false
-        },
-        {
-            service: 'Analiza składu ciała z omówieniem',
-            price: 'od 50 zł',
-            isDL: false
-        }
-    ]
-    const fullServices = [
-        {
-            service: 'prof. dr hab. n. med. Renata Stawerska: konsultacja',
-            specialisation: 'Endokrynologia dla dzieci i młodzieży',
-            price: '280 zł'
-        },
-        {
-            service: 'dr n. med. Anna Łupińska: konsultacja',
-            specialisation: 'Endokrynologia dla dzieci i młodzieży',
-            price: '230 zł'
-        },
-        {
-            service: 'dr n. med. Katarzyna Dąbrowska: konsultacja',
-            specialisation: 'Endokrynologia dla dorosłych',
-            price: '220 zł'
-        },
-        {
-            service: 'dr n. med. Katarzyna Dąbrowska: konsultacja + USG',
-            specialisation: 'Endokrynologia dla dorosłych',
-            price: '300 zł'
-        },
-        {
-            service: 'dr n. med. Małgorzata Szałapska: konsultacja',
-            specialisation: 'Diabetologia, Pediatria',
-            price: '250 zł'
-        },
-        {
-            service: 'lek. Agnieszka Kucińska: konsultacja',
-            specialisation: 'Interna, Diabetologia',
-            price: '200 zł'
-        },
-        {
-            service: 'dr n. med. Jadwiga Kaczmarek: konsultacja',
-            specialisation: 'Alergologia',
-            price: '200 zł'
-        },
-        {
-            service: 'dr n. med. Katarzyna Łokieć: wizyta + dieta',
-            specialisation: 'Dietetyka',
-            price: '200 zł'
-        },
-        {
-            service: 'mgr Magdalena Grobelna: wizyta + dieta',
-            specialisation: 'Dietetyka',
-            price: '150 zł'
-        },
-        {
-            service: 'lek. Krystian Słodkowski: wizyta',
-            specialisation: 'Urologia dla dorosłych',
-            price: '180 zł'
-        },
-        {
-            service: 'Agnieszka Kwiatkowska-Milbrandt: wizyta',
-            specialisation: 'Terapia',
-            price: '150 zł'
-        },
-        {
-            service: 'lek. Ewa Kołodziejczyk: konsujtacja',
-            specialisation: 'Fizjoterapia Urogienekologiczna',
-            price: '180 zł'
-        },
-        {
-            service: 'lek. Wojciech Stawerski: konsultacja, trening personalny',
-            specialisation: 'Fizjoterapia',
-            price: '90 zł'
-        },
-        {
-            service: 'prof. dr hab. n. med. Katarzyna Cypryk: konsultacja',
-            specialisation: 'Diabetologia',
-            price: '280 zł'
-        },
-        {
-            service: 'prof. dr hab. n. med. Kryspin Cypryk: Usg bioder i narządów ruchu',
-            specialisation: 'Ortopedia',
-            price: '200 zł'
-        },
-        {
-            service: 'Joga kręgosłupa 1h',
-            price: '35 zł'
-        },
-        {
-            service: 'Karnet 4 wejść na jogę  1 mieś.',
-            price: '120 zł'
-        },
-        {
-            service: 'Karnet 8 wejścia na jogę  2 mieś.',
-            price: '220 zł'
-        },
-        {
-            service: 'Zajęcia fitness 1 wejście',
-            price: '25 zł'
-        },
-        {
-            service: 'Zajęcia fitness karnet na 4 wejścia 1 mieś.',
-            price: '90 zł'
-        },
-        {
-            service: 'Trening EMS',
-            price: '150 zł'
-        },
-        {
-            service: 'Biopsja',
-            price: '300 zł'
-        },
-        {
-            service: 'USG tarczycy',
-            price: '170 zł'
-        },
-        {
-            service: 'Recepta',
-            price: '80 zł'
-        }
-    ]
 
     return (
         <>
@@ -210,8 +47,8 @@ function Home() {
                     <div className={`radial z-0`} />
                     <div className={`services__grid flex flex-wrap justify-center gap-10 px-2 place-items-center z-10`}>
                         {
-                            services.map(({service, price}) => (
-                                <ServiceCard service={service} price={price} key={service} />
+                            services.map(({service}) => (
+                                <ServiceCard service={service} key={service} />
                             ))
                         }
                     </div>

@@ -7,3 +7,19 @@ export type Specialist = {
   photoPath: string,
   certificate?: string
 }
+
+export type Question = {
+  question: string,
+  answer: string
+}
+
+export type fullService = {
+  service: string,
+  specialisation?: string,
+  price: string
+}
+
+export type Service = {
+  service: string,
+  isDL: boolean
+}

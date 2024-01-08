@@ -2,18 +2,15 @@
 
 import { HiOutlineArrowSmallUp } from 'react-icons/hi2'
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import Footer from '../components/footer'
-import Header from '../components/header'
+import { Footer, Header } from '../components/index'
 import '../styles/index.css'
 import { useEffect, useRef, useState } from 'react'
 
 export default function RootLayout({ children }: {children: React.ReactNode}) {
   const ref = useRef(null);
   const [isVisible, setVisible] = useState(true);
-  const [firstRender, setFirstRender] = useState(true);
 
   useEffect(() => {
-    setFirstRender(false);
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0]
       setVisible(entry.isIntersecting);
