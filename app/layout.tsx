@@ -6,7 +6,11 @@ import { Footer, Header } from '../components/index'
 import '../styles/index.css'
 import { useEffect, useRef, useState } from 'react'
 
-export default function RootLayout({ children }: {children: React.ReactNode}) {
+type Props = {
+  children: React.ReactNode
+}
+
+export default function RootLayout({ children }: Props) {
   const ref = useRef(null);
   const [isVisible, setVisible] = useState(true);
 
@@ -15,7 +19,7 @@ export default function RootLayout({ children }: {children: React.ReactNode}) {
       const entry = entries[0]
       setVisible(entry.isIntersecting);
     })
-    observer.observe(ref.current)
+    observer.observe(ref.current);
   }, [])
 
   const scrollTop = () => {
