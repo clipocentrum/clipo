@@ -1,32 +1,37 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 import { BsFacebook, BsInstagram } from "react-icons/bs"
 import { HiBars2, HiXMark, HiOutlineHome, HiOutlineIdentification, HiOutlineUserGroup, HiOutlineSwatch, HiOutlineQuestionMarkCircle, HiOutlinePaperAirplane } from "react-icons/hi2"
 import '../styles/index.css'
 
-const Header = (props: {isVisible: boolean}) => {
-  const [isOpened, setOpened] = useState(false);
+type Props = {
+  isVisible: boolean;
+  isOpened: boolean;
+  setOpened: Dispatch<SetStateAction<boolean>>;
+}
+
+const Header = ({isVisible, isOpened, setOpened} : Props) => {
 
   return (
-    <header className={`fixed top-0 left-0 header flex flex-auto justify-between w-screen  z-50 ${!props.isVisible && 'bg-teal-700 drop-shadow-sm'} transition-all duration-150`}>
+    <header className={`fixed top-0 left-0 header flex flex-auto justify-between w-screen  z-50 ${!isVisible && 'bg-teal-700 drop-shadow-sm'} transition-all duration-150`}>
         <div className={`header_links flex py-1 px-2`}>
-          <a className={`header_link hover:text-transparent cursor-pointer ${!props.isVisible && 'text-2xl hover:opacity-90 hover:text-transparent border-teal-600 hover:border-teal-600 '} logo text-transparent`} onClick={() => window.scrollTo(0, 0)} href='/#' >
+          <a className={`header_link hover:text-transparent border-teal-600 cursor-pointer ${!isVisible && 'text-2xl hover:opacity-90 hover:text-transparent border-teal-600 hover:border-teal-600 '} logo text-transparent`} onClick={() => window.scrollTo(0, 0)} href='/#' >
             <BsInstagram />
           </a>
-          <a target='_blank' href="https://www.facebook.com/CLiPOpl" className={`header_link ${!props.isVisible && 'text-5xl hover:opacity-90 p-0 hover:text-white border-transparent hover:border-transparent'}`}>
+          <a target='_blank' href="https://www.facebook.com/CLiPOpl" className={`header_link text-teal-600 border-teal-600 ${!isVisible && 'text-5xl text-white hover:opacity-90 p-0 hover:text-white border-transparent hover:border-transparent'}`}>
             <BsFacebook />
           </a>
-          <span className={`${props.isVisible && 'hidden'} text-white flex justify-center items-center ml-5 text-xs md:text-md md:font-bold lg:text-lg`}>
+          <span className={`${isVisible && 'hidden'} text-white flex justify-center items-center ml-5 text-xs md:text-md md:font-bold lg:text-lg`}>
             CLiPO | Centrum Leczenia i Profilaktyki Otyłosci
           </span>
         </div>
 
-        <button onClick={() => setOpened(prev => !prev)} className={`header_burger-btn font-light text-white text-4xl text-center flex justify-center align-center px-4 py-2 z-50 my-auto`}>{isOpened ? <HiXMark /> : <HiBars2 />}</button>
+        <button onClick={() => setOpened(prev => !prev)} className={`header_burger-btn font-light text-4xl text-center flex justify-center align-center px-4 py-2 z-50 my-auto drop-shadow-sm ${(!isVisible || isOpened) ? 'text-white' : 'text-gray-600'}`}>{isOpened ? <HiXMark /> : <HiBars2 />}</button>
 
         <div className={`fixed flex m-0 delay-75 ${!isOpened && 'translate-x-full'} z-40 w-screen`}>
-          <div className={`w-1/2 md:w-2/3 ${!isOpened && 'scale-0'} transition-all duration-75 ${isOpened && 'bg-gray-600 scale-1'} opacity-50 blur-md`} onClick={() => setOpened(false)} />
-          <ul className={`nav ${isOpened ? 'translate-x-0' : 'translate-x-full'} text-white transition-all h-screen w-1/2 md:w-1/3 px-5 py-10 bg-slate-700 rounded-l-2xl shadow-lg`}>
+          <div className={`w-1/2 md:w-2/3 ${!isOpened && 'scale-0'} transition-all duration-75 ${isOpened && 'bg-gray-600 scale-1'} opacity-50 blur-md relative`} onClick={() => setOpened(false)} />
+          <ul className={`nav ${isOpened ? 'translate-x-0' : 'translate-x-full'} text-white transition-all h-dvh w-3/4 md:w-1/3 px-5 py-10 bg-slate-700 rounded-l-2xl shadow-lg`}>
             <li className={`nav_el`}>
               <a onClick={() => {
                   setOpened(false)
@@ -34,7 +39,7 @@ const Header = (props: {isVisible: boolean}) => {
                 <span className={`nav_icon`}>
                   <HiOutlineHome />
                 </span>
-                Strona głowna
+                Strona główna
               </a>
             </li>
             <li className={`nav_el`}>
@@ -78,6 +83,9 @@ const Header = (props: {isVisible: boolean}) => {
               </a>
             </li>
           </ul>
+          <span className={`text-[.5rem] text-gray-200 italic absolute bottom-1 right-1`}>
+            Centrum Leczenia i Profilaktyki Otyłości
+          </span>
         </div>
     </header>
   )

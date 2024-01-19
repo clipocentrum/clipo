@@ -11,14 +11,22 @@ function Home() {
 
     return (
         <>
-            <section className={`landing__page aspect-video bg-contain flex justify-center z-10`}>
+            <section className={`landing__page overflow-hidden h-screen flex justify-center z-2 bg-center md:bg-top bg-cover relative`}>
                 <div className={`flex flex-col justify-center text-center cursor-default`}>
-                    <h1 className={`text-5xl md:text-8xl font-bold text-teal-600 drop-shadow-sm`}>CLiPO</h1>
-                    <div className={`flex justify-between text-white`}>
+                    <div>
+                        <h1 className={`text-5xl md:text-8xl font-bold text-teal-600 drop-shadow-sm`}>
+                            CLiPO
+                        </h1>
+                        <span className={`text-xs md:text-sm italic text-gray-600`}>
+                            Centrum Leczenia i Profilaktyki Otyłości
+                        </span>
+                    </div>
+                    <div className={`flex justify-center text-white`}>
                         <a className={`bg-slate-900 px-5 md:py-2 md:px-10 font-bold text-base md:text-2xl rounded-full hover:opacity-95 transition-all duration-150`} href="/#o-nas">O Nas</a>
-                        <a className={`md:py-2 ml-2 md:ml-0 font-bold text-base md:text-2xl underline decoration-solid hover:opacity-95 transition-all duration-150 text-white drop-shadow-[0_10px_10px_rgba(0,0,0,1)]`} href="/#kontakt">Kontakt</a>
+                        <a className={`md:py-2 ml-2 md:ml-5 font-bold text-base md:text-2xl underline decoration-solid hover:opacity-95 transition-all duration-150 text-white drop-shadow-[0_10px_10px_rgba(0,0,0,1)]`} href="/#kontakt">Kontakt</a>
                     </div>
                 </div>
+                <span className={`text-[.5rem] md:text-sm text-gray-200 italic absolute bottom-1 left-1`}>Centrum Leczenia i Profilaktyki Otyłości // dr n. med. Małgorzata Szałapska</span>
             </section>
             <section id='o-nas' className={`about__us bg-teal-600 w-full px-5 py-2 text-white`}>
                 <h1 className={`font-bold text-4xl`}>
@@ -26,7 +34,7 @@ function Home() {
                 </h1>
                 <span className={`wrapper flex flex-col lg:flex-row`}>
                     <p className={`text-xl py-2 mx-2 text-justify`}>
-                         U nas pomoc otrzymają wszyscy pacjenci borykający się z chorobą otyłosciową, ale także chorujący na cukrzycę, zaburzenia endokrynologiczne i metaboliczne lub choroby przewodu pokarmowego. Współpracujemy z najlepszymi specjalistami, którzy kompleksowo zajmują się zdrowiem zarówno dzieci jak i dorosłych. Naszym celem jest poprawa stanu wiedzy społeczeństwa na temat prawidłowego żywienia i roli aktywności fizycznej. Wierzymy, że promując zdrowy styl życia przyczynimy się do zahamowania epidemii otyłości, szczególnie wśród dzieci i młodzieży. W celu zapewnienia Państwu opieki najwyższej jakości, nieustannie poszerzamy i aktualizujemy swoją wiedzę zgodnie z najnowszymi wytycznymi, co gwarantuje Państwu dostęp do nowoczesnych metod terapeutycznych.
+                        Współpracujemy z najlepszymi specjalistami, którzy kompleksowo zajmują się zdrowiem zarówno dzieci jak i dorosłych. Naszym celem jest poprawa stanu zdrowia i wiedzy społeczeństwa na temat prawidłowego żywienia i roli aktywności fizycznej. Wierzymy, że promując zdrowy styl życia przyczynimy się do zahamowania epidemii otyłości, szczególnie wśród dzieci i młodzieży. W celu zapewnienia Państwu opieki najwyższej jakości oferujemy wielospecjalistyczną pomoc lekarską, nieustannie poszerzamy i aktualizujemy swoją wiedzę zgodnie z najnowszymi wytycznymi, co gwarantuje Państwu dostęp do nowoczesnych metod terapeutycznych. Zapraszamy wszystkie osoby chorujące na otyłość, cukrzycę, zaburzenia endokrynologiczne, choroby przewodu pokarmowego oraz choroby układu ruchu.
                     </p>
                     <img src="/pdf/certyfikat-kompleksowego-leczenia-choroby-otylosciowej.jpeg" alt="certyfikat kompleksowego leczenia choroby otylosciowej" className={`about-certificate flex-1 w-[75%] mx-auto lg:w-[25%] bg-cover lg:mx-0`} />
                 </span>
@@ -48,7 +56,9 @@ function Home() {
                     <div className={`services__grid flex flex-wrap justify-center gap-10 px-2 place-items-center z-10`}>
                         {
                             services.map(({service}) => (
-                                <ServiceCard service={service} key={service} />
+                                <div className={`service__card w-56 m-2 z-10`} key={service}>
+                                    <ServiceCard service={service} />
+                                </div>
                             ))
                         }
                     </div>

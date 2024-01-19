@@ -67,8 +67,7 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
 }
 
 .landing__page {
-    background-image: url('/bg-image-clipo.jpg');
-    background-position: center;
+    background-image: url('/mszalapska-bg.jpeg');
     background-repeat: no-repeat;
 }
 

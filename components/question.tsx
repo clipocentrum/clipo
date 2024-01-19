@@ -20,7 +20,7 @@ const Question = ({question, answer, key}: Props) => {
                 </span>
                 {question}
             </button>
-            <p className={`p-1 pb-0 transition-all duration-300 origin-top scale-y-0 h-0 ${isRevealed && 'revealed'}`}>
+            <p className={`p-1 pb-0 transition-all duration-300 origin-top scale-y-0 text-justify h-0 ${isRevealed && 'revealed'}`}>
                 {answer}
             </p>
         </div>

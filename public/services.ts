@@ -8,9 +8,5 @@ export const services: Service[] = [
     {
         service: 'Konsultacje dietetyczne',
         isDL: false
-    },
-    {
-        service: 'Analiza składu ciała z omówieniem',
-        isDL: false
     }
 ]

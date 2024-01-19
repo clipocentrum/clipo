@@ -7,12 +7,13 @@ import '../styles/index.css'
 import { useEffect, useRef, useState } from 'react'
 
 type Props = {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: Props) {
   const ref = useRef(null);
   const [isVisible, setVisible] = useState(true);
+  const [isOpened, setOpened] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -35,9 +36,9 @@ export default function RootLayout({ children }: Props) {
         <body className='bg-slate-900'>
           <SpeedInsights />
           <div ref={ref} />
-          <Header isVisible={isVisible} />
+          <Header isVisible={isVisible} isOpened={isOpened} setOpened={setOpened} />
           {children}
-          <button onClick={scrollTop} className={`${isVisible && 'scale-0'} fixed bg-teal-700 w-12 aspect-square right-0 bottom-0 text-4xl flex justify-center items-center m-2 text-white rounded-full opacity-60 hover:opacity-95 transition-all duration-150 outline outline-1 outline-white border border-transparent z-50`}>
+          <button onClick={scrollTop} className={`${(isVisible || isOpened) && 'scale-0'} fixed bg-teal-700 w-12 aspect-square right-0 bottom-0 text-4xl flex justify-center items-center m-2 text-white rounded-full opacity-60 hover:opacity-95 transition-all duration-150 outline outline-1 outline-white border border-transparent z-50`}>
             <HiOutlineArrowSmallUp />
           </button>
           <Footer />
