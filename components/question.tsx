@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { HiOutlineChevronRight } from 'react-icons/hi2'
 
-type Props = {
+interface Props {
     question: string,
     answer: string,
     key: any

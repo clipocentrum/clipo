@@ -1,5 +1,5 @@
 import '../../../styles/index.css';
-import { specialists } from '../../../public/specialists';
+import { specialists } from '../../../public/data/specialists';
 import Image from 'next/image';
 
 interface Params {

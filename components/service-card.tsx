@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/index.css'
 
-type Props = {
+interface Props {
   service: string
 }
 

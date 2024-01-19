@@ -71,6 +71,23 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
     background-repeat: no-repeat;
 }
 
+.custom__h1__shadow {
+    text-shadow: 
+        2px 2px 0 #047857,
+        4px 4px 0 #115e59,
+        6px 5px 0 #134e4a;
+}
+
+.text-outline {
+    --color: #0f172a50;
+    text-shadow:
+        1px 0 0 var(--color),
+        -1px 0 0 var(--color),
+        0 1px 0 var(--color),
+        0 -1px 0 var(--color);
+}
+
+
 .logo {
     background-image: url('/clipo-logo.png');
     background-position: center;
@@ -102,12 +119,6 @@ html, body { scroll-behavior: smooth; scroll-padding-top: 4rem; }
 
 .contact {
     --pattern-color: rgb(13 148 136 / .25);
-    /* background:
-        radial-gradient(circle at 100% 50%, transparent 20%, var(--pattern-color) 21%,
-            #22c55e 34%, transparent 35%, transparent),
-        radial-gradient(circle at 0% 50%, transparent 20%, #22c55e 21%, var(--pattern-color) 34%, transparent 35%, transparent) 0 -50px;
-    background-color: rgb(15 23 42);
-    background-size: 75px 100px; */
     background-color: rgba(230, 230, 247, 0);
     background-image:  linear-gradient(var(--pattern-color) 1px, transparent 1px), linear-gradient(to right, var(--pattern-color) 1px, rgba(230, 230, 247, 0) 1px);
     background-size: 20px 20px;

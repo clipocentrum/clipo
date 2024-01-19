@@ -4,7 +4,7 @@ import '../styles/index.css'
 import { useState } from 'react';
 import { Specialist, Question, ServiceCard } from '../components/index';
 import { HiOutlineChevronRight, HiPhone, HiEnvelope, HiMapPin } from 'react-icons/hi2'
-import { specialists, questions, fullServices, services } from '../public/index';
+import { specialists, questions, price_list, services } from '../public/data/index';
 
 function Home() {
     const [isRevealed, setRevealed] = useState(false);
@@ -14,10 +14,10 @@ function Home() {
             <section className={`landing__page overflow-hidden h-screen flex justify-center z-2 bg-center md:bg-top bg-cover relative`}>
                 <div className={`flex flex-col justify-center text-center cursor-default`}>
                     <div>
-                        <h1 className={`text-5xl md:text-8xl font-bold text-teal-600 drop-shadow-sm`}>
+                        <h1 className={`text-5xl md:text-8xl font-bold text-teal-600 custom__h1__shadow`}>
                             CLiPO
                         </h1>
-                        <span className={`text-xs md:text-sm italic text-gray-600`}>
+                        <span className={`text-xs md:text-sm italic text-gray-200 text-outline`}>
                             Centrum Leczenia i Profilaktyki Otyłości
                         </span>
                     </div>
@@ -71,7 +71,7 @@ function Home() {
                 </div>
                 <div className={`grid grid-cols-1 transition-all duration-300 origin-top scale-y-0 h-0 ${isRevealed && 'revealed'}`}>
                     {
-                        fullServices.map(({service, specialisation = "", price}) => (
+                        price_list.map(({service, specialisation = "", price}) => (
                             <div className={`table__cell `} key={service}>
                                 <span className={`cell__title`}>{service}</span>
                                 <span className={`cell__specialisation`}>{specialisation}</span>

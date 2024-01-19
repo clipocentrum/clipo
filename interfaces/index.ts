@@ -1,4 +1,4 @@
-export type Specialist = {
+export interface Specialist {
   slug: string,
   fullName: string,
   title?: string,
@@ -8,18 +8,18 @@ export type Specialist = {
   certificate?: string
 }
 
-export type Question = {
+export interface Question {
   question: string,
   answer: string
 }
 
-export type fullService = {
+export interface Price {
   service: string,
   specialisation?: string,
   price: string
 }
 
-export type Service = {
+export interface Service {
   service: string,
   isDL: boolean
 }

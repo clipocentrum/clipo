@@ -6,7 +6,7 @@ import { Footer, Header } from '../components/index'
 import '../styles/index.css'
 import { useEffect, useRef, useState } from 'react'
 
-type Props = {
+interface Props {
   children: React.ReactNode;
 }
 

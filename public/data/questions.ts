@@ -1,9 +1,9 @@
-import { Question } from '../interfaces/index';
+import { Question } from '../../interfaces/index';
 
 export const questions: Question[] = [
     {
         question: 'Czy w Centrum Medycznym CLiPO pomoc otrzymają jedynie otyli Pacjenci?',
-        answer: 'Pomoc otrzymają wszyscy pacjenci borykający się z chorobą otylosciowa, ale także chorujący na cukrzycę, zaburzenia endokrynologiczne i metaboliczne lub choroby przewodu pokarmowego,  ale również pacjenci potrzebujacy pomocy urologicznej, alergologicznej lub ortopedycznej.'
+        answer: 'Pomoc otrzymają wszyscy pacjenci borykający się z chorobą otyłosciowa, ale także chorujący na cukrzycę, zaburzenia endokrynologiczne i metaboliczne lub choroby przewodu pokarmowego, ale również pacjenci potrzebujący pomocy urologicznej, alergologicznej lub ortopedycznej.'
     },
     {
         question: 'Czy endokrynolodzy w CLiPO zajmują się problemami niskorosłości u dzieci?',
@@ -19,7 +19,7 @@ export const questions: Question[] = [
     },
     {
         question: 'Jak przygotować się do wizyty u dietetyka?',
-        answer: 'W trakcie wizyty przeprowadzamy specjalistyczne badanie składu ciała. Aby badanie było jak najbardziej rzetelne, warto wykonać je na czczo lub, jeżeli wizyta wyznaczona jest w godzinach popołudniowych czy wieczornych, około 2 godzin po ostatnim posiłku. Przed wizytą warto spisać 3-dniowy dzienniczek dietetyczny oraz sporządzić listę produktów lubianych i nielubianych oraz przygotować wyniki badać i dokumentację medyczną.'
+        answer: 'W trakcie wizyty przeprowadzamy specjalistyczne badanie analizy składu ciała, które obowiązkowo jest na bose stopy. Aby badanie było jak najbardziej rzetelne, warto wykonać je na czczo lub, jeżeli wizyta wyznaczona jest w godzinach popołudniowych czy wieczornych, około 2 godzin po ostatnim posiłku. Przed wizytą warto spisać 3-dniowy dzienniczek dietetyczny oraz sporządzić listę produktów lubianych i nielubianych oraz przygotować wyniki badać i dokumentację medyczną'
     },
     {
         question: 'Czy przed wizytą u dietetyka należy zrobić jakieś badania?',
@@ -27,6 +27,6 @@ export const questions: Question[] = [
     },
     {
         question: 'Czy w CLiPO można płacić kartą?',
-        answer: 'W CLiPO można płacić kartą oraz gotówka. Jeżeli korzystacie Państwo z teleporad, e-recept lub diety online formą płatności może być również tradycyjny przelew.'
+        answer: 'W CLiPO można płacić kartą oraz gotówką. Jeżeli korzystacie Państwo z teleporad, e-recept lub diety online formą płatności może być również tradycyjny przelew.'
     },
 ]

@@ -1,4 +1,4 @@
-import { Service } from '../interfaces/index'
+import { Service } from '../../interfaces/index'
 
 export const services: Service[] = [
     {

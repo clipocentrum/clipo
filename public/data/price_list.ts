@@ -1,7 +1,7 @@
-import { fullService } from '../interfaces/index'
+import { Price } from '../../interfaces/index'
 
 
-export const fullServices: fullService[] = [
+export const price_list: Price[] = [
     {
         service: 'prof. dr hab. n. med. Renata Stawerska: konsultacja',
         specialisation: 'Endokrynologia dla dzieci i młodzieży',
@@ -9,12 +9,12 @@ export const fullServices: fullService[] = [
     },
     {
         service: 'dr n. med. Anna Łupińska: konsultacja',
-        specialisation: 'Endokrynologia dla dzieci i młodzieży',
+        specialisation: 'Endokrynologia dla dzieci i młodzieży, Pediatria',
         price: '230 zł'
     },
     {
         service: 'dr n. med. Katarzyna Dąbrowska: konsultacja',
-        specialisation: 'Endokrynologia dla dorosłych',
+        specialisation: 'Endokrynologia dla dorosłych, Interna',
         price: '220 zł'
     },
     {
@@ -34,7 +34,12 @@ export const fullServices: fullService[] = [
     },
     {
         service: 'dr n. med. Jadwiga Kaczmarek: konsultacja',
-        specialisation: 'Alergologia',
+        specialisation: 'Alergologia, Pulmonologia, Pediatria',
+        price: '200 zł'
+    },
+    {
+        service: 'dr. n. med. Ewa Walecka-Kapica: konsultacja',
+        specialisation: 'Gastroenterologia. Interna',
         price: '200 zł'
     },
     {
@@ -43,8 +48,8 @@ export const fullServices: fullService[] = [
         price: '200 zł'
     },
     {
-        service: 'mgr Magdalena Grobelna: wizyta + dieta',
-        specialisation: 'Dietetyka',
+        service: 'mgr inż. Magdalena Grobelna: wizyta + dieta',
+        specialisation: 'Żywienie, edukacja',
         price: '150 zł'
     },
     {
@@ -53,12 +58,7 @@ export const fullServices: fullService[] = [
         price: '180 zł'
     },
     {
-        service: 'Agnieszka Kwiatkowska-Milbrandt: wizyta',
-        specialisation: 'Terapia',
-        price: '150 zł'
-    },
-    {
-        service: 'lek. Ewa Kołodziejczyk: konsujtacja',
+        service: 'lek. Ewa Kołodziejczyk: konsultacja',
         specialisation: 'Fizjoterapia Urogienekologiczna',
         price: '180 zł'
     },
@@ -73,8 +73,8 @@ export const fullServices: fullService[] = [
         price: '280 zł'
     },
     {
-        service: 'prof. dr hab. n. med. Kryspin Cypryk: Usg bioder i narządów ruchu',
-        specialisation: 'Ortopedia',
+        service: 'prof. dr hab. n. med. Kryspin Niedzielski: Usg bioder i narządów ruchu',
+        specialisation: 'Ortopedia dzieci i dorosłych ',
         price: '200 zł'
     },
     {
@@ -82,11 +82,11 @@ export const fullServices: fullService[] = [
         price: '35 zł'
     },
     {
-        service: 'Karnet 4 wejść na jogę  1 mieś.',
+        service: 'Karnet 4 wejścia na jogę, ważny 1 mieś.',
         price: '120 zł'
     },
     {
-        service: 'Karnet 8 wejścia na jogę  2 mieś.',
+        service: 'Karnet 8 wejść na jogę, ważny 2 mieś.',
         price: '220 zł'
     },
     {
@@ -94,7 +94,7 @@ export const fullServices: fullService[] = [
         price: '25 zł'
     },
     {
-        service: 'Zajęcia fitness karnet na 4 wejścia 1 mieś.',
+        service: 'Zajęcia fitness karnet na 4 wejścia, ważny 1 mieś.',
         price: '90 zł'
     },
     {

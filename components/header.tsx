@@ -5,7 +5,7 @@ import { BsFacebook, BsInstagram } from "react-icons/bs"
 import { HiBars2, HiXMark, HiOutlineHome, HiOutlineIdentification, HiOutlineUserGroup, HiOutlineSwatch, HiOutlineQuestionMarkCircle, HiOutlinePaperAirplane } from "react-icons/hi2"
 import '../styles/index.css'
 
-type Props = {
+interface Props {
   isVisible: boolean;
   isOpened: boolean;
   setOpened: Dispatch<SetStateAction<boolean>>;
@@ -27,7 +27,7 @@ const Header = ({isVisible, isOpened, setOpened} : Props) => {
           </span>
         </div>
 
-        <button onClick={() => setOpened(prev => !prev)} className={`header_burger-btn font-light text-4xl text-center flex justify-center align-center px-4 py-2 z-50 my-auto drop-shadow-sm ${(!isVisible || isOpened) ? 'text-white' : 'text-gray-600'}`}>{isOpened ? <HiXMark /> : <HiBars2 />}</button>
+        <button onClick={() => setOpened(prev => !prev)} className={`header_burger-btn font-light text-4xl text-center flex justify-center align-center px-4 py-2 z-50 my-auto drop-shadow-sm ${(!isVisible || isOpened) ? 'text-white' : 'text-teal-600'}`}>{isOpened ? <HiXMark /> : <HiBars2 />}</button>
 
         <div className={`fixed flex m-0 delay-75 ${!isOpened && 'translate-x-full'} z-40 w-screen`}>
           <div className={`w-1/2 md:w-2/3 ${!isOpened && 'scale-0'} transition-all duration-75 ${isOpened && 'bg-gray-600 scale-1'} opacity-50 blur-md relative`} onClick={() => setOpened(false)} />

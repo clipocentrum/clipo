@@ -1,4 +1,4 @@
 export { questions } from './questions';
 export { specialists } from './specialists';
-export { fullServices } from './fullServices';
+export { price_list } from './price_list';
 export { services } from './services';
