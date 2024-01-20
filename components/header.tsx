@@ -23,7 +23,7 @@ const Header = ({isVisible, isOpened, setOpened} : Props) => {
             <BsFacebook />
           </a>
           <span className={`${isVisible && 'hidden'} text-white flex justify-center items-center ml-5 text-xs md:text-md md:font-bold lg:text-lg`}>
-            CLiPO | Centrum Leczenia i Profilaktyki Otyłosci
+            CLiPO | Centrum Leczenia i Profilaktyki Otyłości
           </span>
         </div>
 
