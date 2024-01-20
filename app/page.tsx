@@ -146,9 +146,9 @@ function Home() {
                         <div className={`flex justify-around w-full gap-1 items-center h-full`}>
                             <Image src={`/photos/parking.jpg`} alt={'parking'} height={200} width={200} className={`rounded-xl h-36 md:h-48 aspect-square`} onClick={() => setOpen(true)} />
                             
-                            <div className={`text-justify text-white flex flex-col h-full justify-between items-center font-bold`}>
+                            <div className={`text-justify text-white flex flex-col h-full justify-between items-center font-bold text-xs md:text-base`}>
                                 Miejsce dostosowane do osób z niepełnosprawnością ruchową, darmowy parking.
-                                <div className={`contact__adress text-white text-xl self-end flex items-center gap-1 font-bold opacity-80`}>
+                                <div className={`contact__adress text-white text-sm md:text-xl self-end flex items-center gap-1 font-bold opacity-80`}>
                                     <span className={`text-2xl font-bold text-red-700`}>
                                         <HiMapPin />
                                     </span>
