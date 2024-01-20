@@ -46,7 +46,7 @@ export const specialists: Specialist[] = [
     slug: 'ewa-walecka-kapica',
     fullName: 'Ewa Walecka-Kapica',
     title: 'dr n. med.',
-    specialisation: 'Gastroenerologia, Interna powinno być Gastroenterologia, Interna',
+    specialisation: 'Gastroenterologia, Interna',
     bio: 'Jest specjalistką chorób wewnętrznych i gastroenterologii. Zajmuje się diagnostyką i leczeniem Pacjentów w Klinice Gastroenterologii Centralnego Szpitala Klinicznego Uniwersytetu Medycznego w Łodzi. Swe zainteresowania zawodowe rozwija przede wszystkim w zakresie nieswoistych chorób zapalnych jelit (choroba Leśniowskiego – Crohna, wrzodziejące zapalenie jelita grubego), chorób czynnościowych przewodu pokarmowego, a także chorób związanych z zakażeniem Helicobacter pylori. Uczestniczyła w wielu międzynarodowych programach klinicznych, dotyczących między innymi terapii biologicznych w nieswoistych zapaleniach jelit, a także leczenia zespołu jelita nadwrażliwego; licznych kursach i konferencjach krajowych oraz międzynarodowych. Dodatkową, nie mniej ważną dla Niej dziedziną, jest żywienie kliniczne. Doświadczenia w tym zakresie zdobywała na szkoleniach krajowych i zagranicznych (m. in. w USA – w Johns Hopkins University of Baltimore). Ukończyła również międzynarodowy kurs SCOPE prowadzony przez Founding and European SCOPE, dotyczący roli przewodu pokarmowego w otyłości. Jeste autorką licznych publikacji oryginalnych, artykułów poglądowych i przeglądowych oraz rozdziałów w podręcznikach.',
     photoPath: 'ewalecka.jpg'
   },
@@ -103,7 +103,7 @@ export const specialists: Specialist[] = [
     slug: 'piotr-milbrandt',
     fullName: 'Piotr Milbrandt',
     specialisation: 'Trening personalny',
-    bio: '...',
+    bio: 'Nauczyciel wychowania fizycznego. Dyplomowany trener personalny. Trener przygotowania motorycznego. Szkoleniowiec w zakresie treningu personalnego, motorycznego a także ergonomii i organizacji pracy. Współtwórca programu E+E=E (Ekonomia plus Ergonomia równa się Efektywność)',
     photoPath: 'pmilbrandt.jpg'
   },
   {

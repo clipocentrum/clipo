@@ -2,12 +2,14 @@
 
 import '../styles/index.css'
 import { useState } from 'react';
+import Image from 'next/image';
 import { Specialist, Question, ServiceCard } from '../components/index';
 import { HiOutlineChevronRight, HiPhone, HiEnvelope, HiMapPin } from 'react-icons/hi2'
 import { specialists, questions, price_list, services } from '../public/data/index';
 
 function Home() {
     const [isRevealed, setRevealed] = useState(false);
+    const [isOpen, setOpen] = useState(false);
 
     return (
         <>
@@ -85,58 +87,80 @@ function Home() {
                 </div>
             </section>
             <section id='faq' className={`faq border-b-1`}>
-                <h1 className={`h1`}>Najczesciej zadawane pytania</h1>
+                <h1 className={`h1`}>Najczęściej zadawane pytania</h1>
                 {
                     questions.map(({question, answer}) => (
                         <Question question={question} answer={answer} key={question} />
                     ))
                 }
             </section>
+            <div className={`${isOpen ? 'flex' : 'hidden'} fixed top-[50%] left-[50%] w-dvw h-dvh z-50 -translate-x-[50%] -translate-y-[50%] bg-slate-600 bg-opacity-60 justify-center items-center`} onClick={() => setOpen(false)} >
+                <Image src={`/photos/parking.jpg`} alt={'fullView__parking'} height={1000} width={1000} className={`rounded-3xl aspect-square p-5`} />
+            </div>
             <section id='kontakt' className={`contact relative grid grid-cols-1 lg:grid-cols-2 w-full place-items-center py-2 px-10 lg:px-20 border-opacity-0`}>
                 <div className={`radial`} />
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.700528883247!2d19.389570951461806!3d51.84816476195709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bb5ceaf7ee581%3A0x261e0f2373fb7736!2sCentrum%20Leczenia%20i%20Profilaktyki%20Oty%C5%82o%C5%9Bci%20%7C%20CLiPO!5e0!3m2!1spl!2ssk!4v1690658611597!5m2!1spl!2ssk" className={`w-full aspect-square rounded-xl lg:translate-x-10 z-40`} style={{border: "0px"}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                <div className={`contact__container bg-slate-700 w-full p-2 rounded-xl -translate-y-10 grid grid-rows-4 lg:-translate-y-0 lg:-translate-x-10 lg:shadow-sm z-40`}>
+                <div className={`contact__container bg-slate-700 w-full p-2 rounded-xl -translate-y-10 grid grid-rows-3 items-center lg:-translate-y-0 lg:-translate-x-8 lg:shadow-sm z-40`}>
+
                     <h1 className={`text-teal-600 text-4xl font-bold text-center self-center`}>Kontakt</h1>
-                    <div className={`contact__el flex flex-col `}>
-                        <div className={`contact__title text-white underline text-2xl font-bold`}>
-                            Biuro:
+
+                    <div className={`grid grid-cols-2`}>
+                        <div className={`contact__el flex flex-col items-center`}>
+                            <div className={`contact__title text-white underline text-2xl font-bold`}>
+                                Biuro:
+                            </div>
+                            <a href='tel:+48502239088' className={`contact__link`}>
+                                <span className={`contact__icon`}>
+                                    <HiPhone />
+                                </span>
+                                +48 502 239 088
+                            </a>
+                            <a href='mailto:biuro@clipo.pl' className={`contact__link`}>
+                                <span className={`contact__icon`}>
+                                    <HiEnvelope />
+                                </span>
+                                biuro@clipo.pl
+                            </a>
                         </div>
-                        <a href='tel:+48502239088' className={`contact__link`}>
-                            <span className={`contact__icon`}>
-                                <HiPhone />
-                            </span>
-                            +48 502 239 088
-                        </a>
-                        <a href='mailto:biuro@clipo.pl' className={`contact__link`}>
-                            <span className={`contact__icon`}>
-                                <HiEnvelope />
-                            </span>
-                            biuro@clipo.pl
-                        </a>
+
+                        <div className={`contact__el flex flex-col items-center`}>
+                            <div className={`contact__title text-white underline text-2xl font-bold`}>
+                                Recepcja:
+                            </div>
+                            <a href='tel:+48502238797' className={`contact__link`}>
+                                <span className={`contact__icon`}>
+                                    <HiPhone />
+                                </span>
+                                +48 502 238 797
+                            </a>
+                            <a href='mailto:recepcja@clipo.pl' className={`contact__link`}>
+                                <span className={`contact__icon`}>
+                                    <HiEnvelope />
+                                </span>
+                                recepcja@clipo.pl
+                            </a>
+                        </div> 
                     </div>
-                    <div className={`contact__el flex flex-col `}>
-                        <div className={`contact__title text-white underline text-2xl font-bold`}>
-                            Recepcja:
+                    
+                    <div className={`py-3 px-2 h-full`}>
+                        <div className={`flex justify-around w-full gap-1 items-center h-full`}>
+                            <Image src={`/photos/parking.jpg`} alt={'parking'} height={200} width={200} className={`rounded-xl h-36 md:h-48 aspect-square`} onClick={() => setOpen(true)} />
+                            
+                            <div className={`text-justify text-white flex flex-col h-full justify-between items-center font-bold`}>
+                                Miejsce dostosowane do osób z niepełnosprawnością ruchową, darmowy parking.
+                                <div className={`contact__adress text-white text-xl self-end flex items-center gap-1 font-bold opacity-80`}>
+                                    <span className={`text-2xl font-bold text-red-700`}>
+                                        <HiMapPin />
+                                    </span>
+                                    Al. Struga 39, 95-100 Zgierz
+                                </div>
+                            </div>
+                            
                         </div>
-                        <a href='tel:+48502238797' className={`contact__link`}>
-                            <span className={`contact__icon`}>
-                                <HiPhone />
-                            </span>
-                            +48 502 238 797
-                        </a>
-                        <a href='mailto:recepcja@clipo.pl' className={`contact__link`}>
-                            <span className={`contact__icon`}>
-                                <HiEnvelope />
-                            </span>
-                            recepcja@clipo.pl
-                        </a>
+                        
+                        
                     </div>
-                    <div className={`contact__adress text-white text-xl self-end py-3 px-2 flex items-center gap-1 font-bold`}>
-                        <span className={`text-2xl font-bold text-red-700`}>
-                            <HiMapPin />
-                        </span>
-                        Al. Struga 39, 95-100 Zgierz
-                    </div>
+                    
                 </div>
             </section>
         </>

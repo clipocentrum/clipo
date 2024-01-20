@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className={`grid z-48 grid-cols-1 place-items-start gap-2 p-2 bg-teal-600 lg:grid-cols-2`}>
         <h2 className={`text-white font-bold text-xl`}>
-            CLiPO | Centrum Leczenia i Profilaktyki Otyłosci
+            CLiPO | Centrum Leczenia i Profilaktyki Otyłości
         </h2>
         <div className={`header_links flex w-full lg:justify-end`}>
             <a target='_blank' href="https://www.facebook.com/CLiPOpl" className={`header_link text-2xl hover:opacity-90 hover:text-white`}>

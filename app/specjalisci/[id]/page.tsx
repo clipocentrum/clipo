@@ -21,7 +21,7 @@ function Specialista({ params }: Params){
                             {specialist.fullName}
                         </h1>
                         <span className={`w-full text-center py-2 text-lg italic text-white opacity-80`}>{specialist.specialisation}</span>
-                        <p className={`py-2 px-4 text-white`}>
+                        <p className={`py-2 px-4 text-white text-justify`}>
                             {specialist.bio}
                         </p>
                     </div>
