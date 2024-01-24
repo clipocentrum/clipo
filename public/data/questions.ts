@@ -3,7 +3,7 @@ import { Question } from '../../interfaces/index';
 export const questions: Question[] = [
     {
         question: 'Czy w Centrum Medycznym CLiPO pomoc otrzymają jedynie otyli Pacjenci?',
-        answer: 'Pomoc otrzymają wszyscy pacjenci borykający się z chorobą otyłościowa, ale także chorujący na cukrzycę, zaburzenia endokrynologiczne i metaboliczne lub choroby przewodu pokarmowego, ale również pacjenci potrzebujący pomocy urologicznej, alergologicznej lub ortopedycznej.'
+        answer: 'Pomoc otrzymają wszyscy pacjenci borykający się z chorobą otyłościową, ale także chorujący na cukrzycę, zaburzenia endokrynologiczne i metaboliczne lub choroby przewodu pokarmowego, ale również pacjenci potrzebujący pomocy urologicznej, alergologicznej lub ortopedycznej.'
     },
     {
         question: 'Czy endokrynolodzy w CLiPO zajmują się problemami niskorosłości u dzieci?',

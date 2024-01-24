@@ -5,12 +5,12 @@ export const price_list: Price[] = [
     {
         service: 'prof. dr hab. n. med. Renata Stawerska: konsultacja',
         specialisation: 'Endokrynologia dla dzieci i młodzieży',
-        price: '280 zł'
+        price: '300 zł'
     },
     {
         service: 'dr n. med. Anna Łupińska: konsultacja',
         specialisation: 'Endokrynologia dla dzieci i młodzieży, Pediatria',
-        price: '230 zł'
+        price: '250 zł'
     },
     {
         service: 'dr n. med. Katarzyna Dąbrowska: konsultacja',
@@ -20,7 +20,7 @@ export const price_list: Price[] = [
     {
         service: 'dr n. med. Katarzyna Dąbrowska: konsultacja + USG',
         specialisation: 'Endokrynologia dla dorosłych',
-        price: '300 zł'
+        price: '330 zł'
     },
     {
         service: 'dr n. med. Małgorzata Szałapska: konsultacja',
@@ -30,12 +30,12 @@ export const price_list: Price[] = [
     {
         service: 'lek. Agnieszka Kucińska: konsultacja',
         specialisation: 'Interna, Diabetologia',
-        price: '200 zł'
+        price: '220 zł'
     },
     {
         service: 'dr n. med. Jadwiga Kaczmarek: konsultacja',
         specialisation: 'Alergologia, Pulmonologia, Pediatria',
-        price: '200 zł'
+        price: '220 zł'
     },
     {
         service: 'dr. n. med. Ewa Walecka-Kapica: konsultacja',
@@ -45,17 +45,17 @@ export const price_list: Price[] = [
     {
         service: 'dr n. med. Katarzyna Łokieć: wizyta + dieta',
         specialisation: 'Dietetyka',
-        price: '200 zł'
+        price: '270 zł'
     },
     {
         service: 'mgr inż. Magdalena Grobelna: wizyta + dieta',
         specialisation: 'Żywienie, edukacja',
-        price: '150 zł'
+        price: '200 zł'
     },
     {
         service: 'lek. Krystian Słodkowski: wizyta',
         specialisation: 'Urologia dla dorosłych',
-        price: '180 zł'
+        price: '200 zł'
     },
     {
         service: 'lek. Ewa Kołodziejczyk: konsultacja',
@@ -82,11 +82,11 @@ export const price_list: Price[] = [
         price: '35 zł'
     },
     {
-        service: 'Karnet 4 wejścia na jogę, ważny 1 mieś.',
+        service: 'Karnet 4 wejścia na jogę, ważny 1 miesiąc',
         price: '120 zł'
     },
     {
-        service: 'Karnet 8 wejść na jogę, ważny 2 mieś.',
+        service: 'Karnet 8 wejść na jogę, ważny 2 miesiąc',
         price: '220 zł'
     },
     {
@@ -94,7 +94,7 @@ export const price_list: Price[] = [
         price: '25 zł'
     },
     {
-        service: 'Zajęcia fitness karnet na 4 wejścia, ważny 1 mieś.',
+        service: 'Zajęcia fitness karnet na 4 wejścia, ważny 1 miesiąc',
         price: '90 zł'
     },
     {
@@ -103,11 +103,11 @@ export const price_list: Price[] = [
     },
     {
         service: 'Biopsja',
-        price: '300 zł'
+        price: '330 zł'
     },
     {
         service: 'USG tarczycy',
-        price: '170 zł'
+        price: '190 zł'
     },
     {
         service: 'Recepta',

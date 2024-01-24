@@ -19,7 +19,7 @@ function Home() {
                         <h1 className={`text-5xl md:text-8xl font-bold text-teal-600 custom__h1__shadow`}>
                             CLiPO
                         </h1>
-                        <span className={`text-xs md:text-sm italic text-gray-200 text-outline`}>
+                        <span className={`text-sm md:text-md italic lg:text-lg text-black text-outline`}>
                             Centrum Leczenia i Profilaktyki Otyłości
                         </span>
                     </div>
@@ -28,7 +28,7 @@ function Home() {
                         <a className={`md:py-2 ml-2 md:ml-5 font-bold text-base md:text-2xl underline decoration-solid hover:opacity-95 transition-all duration-150 text-white drop-shadow-[0_10px_10px_rgba(0,0,0,1)]`} href="/#kontakt">Kontakt</a>
                     </div>
                 </div>
-                <span className={`text-[.5rem] md:text-sm text-gray-200 italic absolute bottom-1 left-1`}>Centrum Leczenia i Profilaktyki Otyłości // dr n. med. Małgorzata Szałapska</span>
+                <span className={`text-[.75rem] sm:text-sm md:text-md lg:text-lg text-gray-900 italic absolute bottom-1 left-1`}>Centrum Leczenia i Profilaktyki Otyłości // dr n. med. Małgorzata Szałapska</span>
             </section>
             <section id='o-nas' className={`about__us bg-teal-600 w-full px-5 py-2 text-white`}>
                 <h1 className={`font-bold text-4xl`}>

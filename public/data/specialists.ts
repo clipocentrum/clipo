@@ -7,7 +7,7 @@ export const specialists: Specialist[] = [
     title: 'dr n. med.',
     specialisation: 'Diabetologia, Pediatria',
     bio: 'Jest specjalistką pediatrii i diabetologii. Pracuje w Klinice Endokrynologii i Chorób Metabolicznych Instytutu Centrum Zdrowia Matki Polki w Łodzi. Autorka kilkudziesięciu prac naukowych w zakresie cukrzycy i leczenia otyłości, aktywna uczestniczka i prelegentka licznych międzynarodowych konferencji. Koordynatorka europejskich projektów dotyczących zapobieganiu cukrzycy. Zajmuje się promowaniem zachowań prozdrowotnych, zwłaszcza wśród dzieci i młodzieży, wczesną diagnostyką cukrzycy i jej powikłań. Wraz z zespołem dietetyków CLiPO zajmuje się przygotowywaniem pacjentek z rozpoznanym zespołem metabolicznym do ciąży. Opiekuje się pacjentkami z cukrzycą ciążową.',
-    photoPath: 'mszalapska.jpg',
+    photoPath: 'mszalapska.jpeg',
     certificate: 'mszalapska-certificate.webp'
   },
   {
@@ -94,7 +94,7 @@ export const specialists: Specialist[] = [
   {
     slug: 'magdalena-grobelna',
     fullName: 'Magdalena Grobelna',
-    title: 'mgr',
+    title: 'mgr inż.',
     specialisation: 'Żywienie, edukacja',
     bio: '',
     photoPath: 'mgrobelna.jpg'
@@ -133,7 +133,7 @@ export const specialists: Specialist[] = [
   {
     slug: 'zaneta-powolna',
     fullName: 'Żaneta Powolna',
-    title: 'Instruktorka Fitness',
+    title: '',
     specialisation: 'Trening personalny, grupowy, EMS',
     bio: 'Jest certyfikowanym instruktorem fitness oraz trenerem personalnym. Prowadzi treningi personalne, zajęcia grupowe Fitness oraz treningi EMS. Od lat Fitness jest jej pasją, którą stara się każdego dnia zarażać innych ludzi, a w szczególności swoich podopiecznych. Zachęca ludzi, przekazując im mnóstwo pozytywnej energii w postaci różnych ciekawych ćwiczeń na treningach oraz podpowiadając, jak należy się prawidłowo odżywiać i jak trenować. Od 13 lat biega i jest czynnym zawodnikiem/amatorem. Swoje starty zaczynała na bieżni na średnich dystansach, głównie 800m i 1500m, a teraz startuje w biegach na 10km, w półmaratonach i maratonach.',
     photoPath: 'zpowolna.jpg'
@@ -141,7 +141,7 @@ export const specialists: Specialist[] = [
   {
     slug: 'urszula-olszowka',
     fullName: 'Urszula Olszówka',
-    title: 'Joginka',
+    title: '',
     specialisation: 'Joga',
     bio: 'Dyplomowany nauczyciel jogi - Insytut Jogi Integralnej w Warszawie, dyplomowany instruktor Hatha jogi - AZS Politechniki Częstochowskiej. Instruktor pilates specjalizacji Core (praca w grupach zwiększonego ryzyka: zdrowy kręgosłup, ćwiczenia po porodzie, senior) - BB Pilates School. Entuzjastka pozytywnego i zdrowego stylu życia oraz rozwoju osobistego. Pogłębia wiedzę i doświadczenie głównie dzięki codziennej praktyce własnej, wspartej uczestnictwem w warsztatach tematycznych w zakresie: Iyengar Joga, Joga funkcjonalna, Vinyasa Joga, Yin Joga, Joga Kurunta, Pranayamy i Medytacji. Joga jest dla niej szczególną pasją i drogą życia. Na swoich zajęciach lubi łączyć rożne style jogi, oprócz asan hatha jogi wprowadza elementy vinyas, pranayamy, medytacji, ćwiczeń energetycznych oraz rehabilitacyjnych, w zależności od możliwości i potrzeb grupy. Uwielbia ruch, vinyasy, harmonijny przepływ energii i stan medytacji pojawiający się, gdy ciało płynie przez kolejne sekwencje, a także spokój wynikający z połączenia ruchu i oddechu. Na pierwszym miejscu zwraca uwagę na wszelkie dolegliwości zdrowotne, w szczególności kręgosłupa i proponuje wariantowe wykonywanie asan, połączone ze świadomym, uważnym oddechem. Dba o to, żeby zajęcia były bezpieczne i dostosowane do możliwości i ograniczeń uczestnika.',
     photoPath: 'uolszowka.jpg'
