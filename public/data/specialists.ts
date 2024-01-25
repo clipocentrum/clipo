@@ -96,7 +96,7 @@ export const specialists: Specialist[] = [
     fullName: 'Magdalena Grobelna',
     title: 'mgr inż.',
     specialisation: 'Żywienie, edukacja',
-    bio: '',
+    bio: 'Absolwentka Uniwersytetu Rolniczego w Krakowie, wydziału Technologii Żywności i Żywienia Człowieka. Od ponad dwudziestu lat zajmuje się różnymi aspektami związanymi z żywieniem zarówno dzieci jaki dorosłych oraz seniorów. Swoją karierę zawodową rozpoczynała w firmie Gerber, gdzie projektowała odżywki dla niemowląt certyfikowane przez IMiD oraz opiniowane przez IŻŻ. Od roku współpracuje jako wykładowca z Centrum Kształcenia i Wdrożeń. Szkoli kucharzy, intendentów i personel placówek w zakresie prawidłowego bilansowania diet dziecie w żłobkach, przedszkolach i szkołach zgodnego z Ustawą o opiece nad dzieckiem do lat 3 oraz Rozporządzeniem Ministra Zdrowia z dnia 26 lipca 2016 r. w sprawie grup środków spożywczych przeznaczonych do sprzedaży dzieciom i młodzieży w jednostkach systemu oświaty oraz wymagań, jakie muszą spełniać środki spożywcze stosowane w ramach żywienia zbiorowego dzieci i młodzieży w tych jednostkach. Pracuje w Klinice Endokrynologii i Chorób Metabolicznych Instytutu Centrum Zdrowia Matki Polki w Łodzi. Z CLIPO współpracuje od początku jego istnienia. Specjalizuje się w prowadzeniu diet u dzieci i dorosłych z cukrzycą, insulinoopornością, niedoczynością tarczycy oraz innymi zaburzeniami endokrynologicznymi. Od czerwca 2022 r. Jest Edukatorem Cukrzycowym',
     photoPath: 'mgrobelna.jpg'
   },
   {
