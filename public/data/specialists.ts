@@ -131,6 +131,14 @@ export const specialists: Specialist[] = [
     photoPath: 'wstawerski.jpg'
   },
   {
+    slug: 'marlena-zajaczkowska',
+    fullName: 'Marlena Zajączkowska',
+    title: 'dr n. med.',
+    specialisation: 'Psychiatria',
+    bio: 'Jest lekarzem psychiatrą z wieloletnim doświadczeniem w pracy  klinicznej oraz dydaktycznej w Szpitalu im Babińskiego w Łodzi, Szpitalu im. Wilczkowskiego w Gostyninie oraz w lecznictwie ambulatoryjnym. Obecnie pełni rolę Koordynatora Oddziału Dziennego Leczenia Nerwic i Zaburzeń Osobowości prowadzonego w nurcie terapii poznawczo-behawioralnej oraz schematów oraz w Poradni EGO w Łodzi. Autorka wielu artykułów naukowych dotyczących zaburzeń depresyjnych i innych chorób psychicznych. Stale poszerza swoją wiedzę przez udział w konferencjach i szkoleniach. W procesie leczenia podchodzi do pacjenta całościowo, z uwzględnieniem jego stanu psychicznego, somatycznego jak i sytuacji życiowej. Dobierając metody terapeutycznych uwzględnia zarówno aktualna wiedzę na temat leczenia farmakologicznego jak i metody pozafarmakologiczne.',
+    photoPath: 'mzajaczkowska.jpeg'
+  },
+  {
     slug: 'zaneta-powolna',
     fullName: 'Żaneta Powolna',
     title: '',

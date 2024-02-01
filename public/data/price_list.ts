@@ -28,6 +28,11 @@ export const price_list: Price[] = [
         price: '250 zł'
     },
     {
+        service: 'dr n. med. Marlena Zajączkowska: konsultacja',
+        specialisation: 'Psychiatria',
+        price: '250 zł'
+    },
+    {
         service: 'lek. Agnieszka Kucińska: konsultacja',
         specialisation: 'Interna, Diabetologia',
         price: '220 zł'
@@ -40,7 +45,7 @@ export const price_list: Price[] = [
     {
         service: 'dr. n. med. Ewa Walecka-Kapica: konsultacja',
         specialisation: 'Gastroenterologia. Interna',
-        price: '200 zł'
+        price: '220 zł'
     },
     {
         service: 'dr n. med. Katarzyna Łokieć: wizyta + dieta',
