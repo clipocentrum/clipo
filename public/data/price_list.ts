@@ -50,12 +50,12 @@ export const price_list: Price[] = [
     {
         service: 'dr n. med. Katarzyna Łokieć: wizyta + dieta',
         specialisation: 'Dietetyka',
-        price: '270 zł'
+        price: '230 zł'
     },
     {
         service: 'mgr inż. Magdalena Grobelna: wizyta + dieta',
         specialisation: 'Żywienie, edukacja',
-        price: '200 zł'
+        price: '180 zł'
     },
     {
         service: 'lek. Krystian Słodkowski: wizyta',
