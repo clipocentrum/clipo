@@ -14,8 +14,8 @@ function Home() {
     return (
         <>
             <section className={`landing__page overflow-hidden h-screen flex justify-center z-2 bg-center md:bg-top bg-cover relative`}>
-                <div className={`flex flex-col justify-center text-center cursor-default`}>
-                    <div>
+                <div className={`flex flex-col relative justify-center text-center cursor-default`}>
+                    <div className={`lg:translate-x-56`}>
                         <h1 className={`text-5xl md:text-8xl font-bold text-teal-600 custom__h1__shadow`}>
                             CLiPO
                         </h1>
@@ -23,7 +23,7 @@ function Home() {
                             Centrum Leczenia i Profilaktyki Otyłości
                         </span>
                     </div>
-                    <div className={`flex justify-center text-white`}>
+                    <div className={`flex justify-center text-white lg:translate-x-56`}>
                         <a className={`bg-slate-900 px-5 md:py-2 md:px-10 font-bold text-base md:text-2xl rounded-full hover:opacity-95 transition-all duration-150`} href="/#o-nas">O Nas</a>
                         <a className={`md:py-2 ml-2 md:ml-5 font-bold text-base md:text-2xl underline decoration-solid hover:opacity-95 transition-all duration-150 text-white drop-shadow-[0_10px_10px_rgba(0,0,0,1)]`} href="/#kontakt">Kontakt</a>
                     </div>
