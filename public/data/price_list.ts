@@ -108,7 +108,7 @@ export const price_list: Price[] = [
     },
     {
         service: 'Biopsja',
-        price: '330 zł'
+        price: '350 zł'
     },
     {
         service: 'USG tarczycy',
