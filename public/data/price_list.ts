@@ -15,7 +15,7 @@ export const price_list: Price[] = [
     {
         service: 'dr n. med. Katarzyna Dąbrowska: konsultacja',
         specialisation: 'Endokrynologia dla dorosłych, Interna',
-        price: '220 zł'
+        price: '250 zł'
     },
     {
         service: 'dr n. med. Katarzyna Dąbrowska: konsultacja + USG',
@@ -30,7 +30,7 @@ export const price_list: Price[] = [
     {
         service: 'dr n. med. Marlena Zajączkowska: konsultacja',
         specialisation: 'Psychiatria',
-        price: '250 zł'
+        price: '240 zł'
     },
     {
         service: 'lek. Agnieszka Kucińska: konsultacja',
